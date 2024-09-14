@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TIPOS DE APLICAÇÕES PARA USUÁRIO FINAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../topicos-relacionados/planilhas.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>TIPOS DE APLICAÇÕES PARA USUÁRIO FINAL</h2>
+
+    <h3>Planilhas Descartáveis</h3>
+    <p>São planilhas utilizadas do mesmo modo que uma calculadora, para realização de cálculos, sendo que não é mantida
+      uma cópia eletrônica desta operação.</p>
+    <p>Esta atividade deve ser documentada do mesmo modo que o uso da calculadora seria realizado, ou seja, os valores e
+      o resultados seriam registrados e assinados. Os resultados podem ser
+      impressos, rotulados e assinados. Deve estar claro na folha de registros exatamente qual
+      operação aritmética foi realizada. Isto pode ser facilitado pela impressão de uma cópia da
+      planilha exibindo a fórmula de cálculo utilizada. Esta cópia se torna parte do registro
+      BPF.</p>
+    <p>Os cálculos utilizados para processamento de dados de BPF devem ser verificados. Isto não
+      significa que os algoritmos utilizados pelas funções nativas da planilha necessitam ser
+      verificados quanto a sua exatidão, mas sim demonstrar que as fórmulas corretas estão sendo
+      utilizadas. Ex.: (a + b) * c é diferente de a + (b * c), e este é um erro possível
+      de ocorrer.</p>
+    <p>A verificação dos algoritmos pode ser realizada por meio da impressão da fórmula
+      (<i>cell formulae</i>) ou por uma revisão feita por terceiros.</p>
+
+
+    <h3>Planilhas Retidas como Documentos</h3>
+    <p>Há planilhas que são utilizadas como um processador de texto e não como uma aplicação
+      tradicional. A principal diferença é que a planilha pode ser utilizada tanto para registrar
+      dados BPF quanto para manipulá-los. Dessa forma, se faz aconselhável gerenciá-las como
+      documentos e não como aplicações. É extremamente difícil estabelecer que todas as cópias
+      salvas posteriormente sejam as mesmas que as originais. Cálculos, portanto, devem ser
+      verificados e detalhadamente explicados, quando existirem em um documento de texto. Isto
+      inclui a evidência da fórmula utilizada, conforme descrito no item
+      "Planilhas Descartaveis".</p>
+    <p>A não ser que a planilha seja adequadamente controlada, deve-se considerar a impressão em
+      papel como o registro-mestre.</p>
+    <p>Há uma variedade de opções para se obter o controle adequado deste tipo de planilha:
+      <ul>
+        <li>Utilização das opções internas de segurança da planilha, tais como células ou guias
+          protegidas por senhas;</li>
+        <li>Armazenagem da planilha em um diretório seguro;</li>
+        <li>Gerenciamento da planilha em um sistema de gerenciamento eletrônico de documentos.</li>
+      </ul>
+    </p>
+
+    <h3>Planilhas Utilizadas como Banco de Dados</h3>
+    <p>São aquelas planilhas utilizadas para gerenciar ou armazenar dados BPF eletronicamente. Os
+      dados podem ser atualizados com frequência, o que pode causar dificuldades porque as planilhas
+      não possuem os controles intrínsecos que possuem os bancos de dados relacionais, necessários
+      para assegurar a integridade dos dados.</p>
+    <p>As planilhas geralmente possuem limitada ou nenhuma capabilidade para controlar a edição de
+      dados ou para suportar trilhas de auditoria quando necessário. Ao se criar uma planilha, devem
+      ser desenvolvidos controles externos para que sejam superadas estas deficiências.</p>
+    <p>Os usuários devem, portanto, estar plenamente conscientes das limitações e vulnerabilidades
+      das planilhas quando propostas como alternativa a um aplicativo de banco de dados.</p>
+    <p> Devido às limitações das planilhas, deve-se utilizar bancos de dados relacionais ao invés de
+      planilhas eletrônicas, visto que estas são limitadas quanto ao armazenamento e gerenciamento
+      de dados podendo o arquivo se corromper quanto esta atingir determinados valores de dados.</p>
+    <p>Embora existam produtos comercialmente disponíveis destinados a fornecer recursos de trilha de auditoria para
+      planilhas eletrônicas, como regra geral, o uso de planilhas eletrônicas nas
+      quais as trilhas de auditoria sejam necessárias não devem ser utilizadas.</p>
+    <p><i>Softwares</i> de planilha geralmente não são projetados para fornecer a funcionalidade de
+      trilha de auditoria. Assim sendo, a utilização de um banco de dados com esta capacidade
+      intrínseca é o preferível.</p>
+
+
+    <h3>Aplicações do Tipo <i>Template</i></h3>
+    <p>Uma utilização muito comum de planilhas é o desenvolvimento de soluções do tipo
+      <i>template</i>, onde os dados podem ser sujeitos à manipulação padrão e o resultado salvo
+      como um documento único. Aplicações para a realização de análises estatísticas ou filtragem e
+      manipulação de dados podem também pertencer a esta sub-categoria. Os <i>templates</i> podem
+      ser utilizados por exemplo para a tabulação e processamento de dados de um estudo clínico ou,
+      similarmente para tabulação e processamento de dado de resultados de testes de controle de
+      qualidade antes da liberação do produto.</p>
+    <p> Ao desenvolver tais <i>templates</i>, usuários e desenvolvedores devem entender e documentar
+      totalmente a manipulação necessária. Isto permite a confirmação clara das intenções de projeto
+      contra os recursos do pacote padrão a serem estabelecidos e confirmados.</p>
+    <p> Os seguintes itens devem ser considerados:
+      <ul>
+        <li>Cálculos devem ser verificados quanto a sua exatidão;</li>
+        <li>O <i>template</i> vai rodar em uma estação de trabalho única ou disponibilizado para
+          <i>download</i> de uma locação única? Se não, como se tem garantia de que todos os usuários
+          utilizarão a versão correta? O controle da versão deve ser estabelecido, suportada por um
+          processo de gerenciamento de mudança efetivo;</li>
+        <li>Como o acesso à aplicação e aos campos de dados pelos usuários e pelo desenvolvedor
+          serão controlados? Preferencialmente todas as células, excetuando-se aquelas utilizadas
+          para a entrada de dados, devem ser bloqueadas e inacessíveis para o usuário;</li>
+        <li>Como as funcionalidades irão ser configuradas? Existe um requisito para roteiro
+          personalizado quando forem utilizados assistentes de aplicativos? Uma “macro” é um
+          <i>software</i> customizado. Mesmo quando criado por captura de teclas, há um programa
+          escrito em uma linguagem tal como a <i>Visual Basic for Applications®</i> (VBA) por trás de
+          cada macro;</li>
+        <li>Haverá mais de um módulo? Os testes de integração são apropriados nestes casos. Para
+          planilhas isto pode envolver <i>links</i> diretos de células para outras planilhas. Estes
+          <i>links</i> podem ser afetados por mudanças e deveriam ser abordados como parte do controle
+          de mudanças.</li>
+        <li>A entrada de dados será somente via teclado? Alimentações de dados externos necessitam de
+          configuração e uma planilha pode não ser sofisticada o suficiente para lidar com entradas
+          não usuais (ex.: uma cadeia de caracteres que seja muito longa poderá ser truncada e somente
+          uma parte desta cadeia ser importada);</li>
+        <li>A saída será salva em arquivo ou apenas impressa? Controles de registros eletrônicos podem
+          ser necessários se o documento for retido eletronicamente.</li>
+      </ul>
+    </p>
+
+    <h3>Banco de Dados de Área de Trabalho</h3>
+    <p>Bancos de Dados de Área de Trabalho são aqueles concebidos e instalados em uma estação de
+      trabalho ou computador de uso de rotina. Estas soluções simples são destinadas para a
+      armazenagem de pequenas quantidades de dados (ex.: MS Access).</p>
+    <p>O banco de dados de área de trabalho tanto de propriedade quanto o de código aberto oferece
+      soluções superiores para o gerenciamento de grandes volumes de dados quando comparados às
+      planilhas, mas eles ainda são geralmente significativamente menos seguros do que sistemas
+      de gerenciamento de banco de dados mais sofisticados desenvolvidos para rodar em ambientes
+      baseados em servidores dedicados e gerenciados pelo setor de TI através de DBA
+      (ex.: Oracle®, MS SQL Server, etc.).</p>
+    <p>A utilização destes bancos menos seguros pode apresentar riscos significativos aos registros
+      relevantes às BPF. É necessário haver controles externos para proteção destes registros.</p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

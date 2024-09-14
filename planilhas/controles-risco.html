@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CONTROLES COM BASE NO RISCO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../topicos-relacionados/planilhas.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>CONTROLES COM BASE NO RISCO</h2>
+    <p>
+      Os riscos às BPF devem ser avaliados. Os seguintes aspectos devem ser considerados:
+      <ul>
+        <li>A integridade dos dados relacionados ao controle dos arquivos de dados, visto que a maioria
+          das planilhas desenvolvidas processam dados;</li>
+        <li>A complexidade da planilha, com base na suposição de que erros sistemáticos não
+          detectados são mais prováveis de ocorrer em <i>software</i> não desenvolvido sob um rigoroso
+          método de desenvolvimento e que planilhas mais complexas tem mais oportunidade de ocorrência
+          de erros;</li>
+        <li>O impacto potencial na segurança do paciente, qualidade do produto e integridade dos dados.</li>
+      </ul>
+    </p>
+    <p>Com base nestas avaliações devem ser estabelecidos controles com foco em:
+      <ul>
+        <li>Grau de verificação;</li>
+        <li>Controle de segurança (tanto para o código da planilha quanto para os registros BPx que
+          estão na planilha);</li>
+        <li>Controle de mudanças;</li>
+        <li>Controle da infraestrutura na qual a planilha é construída.</li>
+      </ul>
+    </p>
+
+    <h3>Grau de Verificação</h3>
+    <p>A extensão e o rigor da verificação dependem do risco, da complexidade e da inovação da
+      planilha.</p>
+    <p>Planilhas complexas e de alto risco necessitam de testes mais rigorosos. A quantidade de
+      ramificações lógicas na planilha é um bom indicador da sua complexidade; se existirem muitas
+      funções lógicas (IF, AND, OR etc.) ou tabelas de pesquisa, a complexidade é maior. Embora
+      sejam funções nativas, elas introduzem mais caminhos potenciais dentro da planilha e,
+      portanto, mais ramificações que exigem uma estratégia de testes mais sofisticada.</p>
+    <p>Macros também aumentam a complexidade das planilhas, porque são efetivamente aplicações
+      secundárias embutidas. Mesmo quando são criadas por meio de captura de teclas, há um programa
+      com uma linguagem por trás da macro, embora as macros que simplesmente automatizam uma série
+      de ações sejam menos preocupantes do que aquelas que contenham ramificações lógicas. As
+      macros devem ser desafiadas por meio de testes de funcionalidade. Macros que incluam
+      caminhos lógicos devem ser sujeitas a um maior rigor de verificação, com a devida atenção
+      aos múltiplos caminhos lógicos.</p>
+
+    <h3>Controle de Segurança</h3>
+    <p>As considerações de segurança para as planilhas são semelhantes às existentes para as
+      aplicações na rede ou servidor, tais como: acesso à planilha, acesso aos dados através
+      da planilha e acesso aos dados ao nível do sistema operacional ou código da planilha. A
+      segurança dentro do ambiente operacional deve ser adequada ao tipo de informação armazenada
+      ou processada.</p>
+    <p>Para muitas planilhas, uma combinação de controles de infraestrutura (ex.: acesso restrito a
+      diretórios) e controles disponível na planilha (ex.: senha de proteção para células da
+      planilha) podem proporcionar alguma segurança contra mudanças não intencionais. Contudo,
+      estes controles podem ser ineficientes para evitar que o criador da planilha faça mudanças
+      fora do processo de controle de mudanças, particularmente no caso de a planilha estar
+      localizada em uma estação de trabalho
+      individual. Nestas situações o ideal é a colocação da planilha em ambiente de rede na qual os
+      direitos de todos os usuários, incluindo o autor, sejam limitados, adicionando também um
+      processo de <i>backup</i> regular programado.</p>
+    <p>Frequentemente, os dados são salvos dentro da própria planilha. A garantia da integridade
+      destes dados requer o uso de controles muito rígidos, incluindo quaisquer controles necessários
+      dos registros eletrônicos. Em casos onde a planilha for sujeita a algum tipo de edição, o
+      controle adequado pode envolver o uso de um Sistema Eletrônico de Gerenciamento de Documento
+      (EDMS). Como alternativa, podem ser mantidas cópias controladas em um formato que não possa
+      ser alterado ou cópia impressa.</p>
+    <p>Os dados relevantes às BPF não podem ser salvos em um <i>drive</i> de disco local que não seja
+      seguro e que não seja submetido à realização de cópias de segurança (<i>backup</i>)
+      regularmente.</p>
+    <p>Se o grau de segurança da planilha não for adequado o suficiente para os dados nela
+      gerenciados, a empresa regulada deve buscar uma aplicação que rode em um ambiente
+      operacional mais robusto.</p>
+
+
+    <h3>Controle de Mudança</h3>
+    <p>Planilhas que processam dados relevantes às BPF devem ser sujeitas a controle de mudanças.
+      O gerenciamento de versão é difícil no caso de planilhas. Em alguns casos, o gerenciamento
+      da planilha dentro de um EDMS pode ser uma solução apropriada, visto que este sistema mantém
+      uma trilha de auditoria das versões da planilha.</p>
+    <p>Uma outra solução é a utilização de ferramentas de biblioteca que são frequentemente
+      utilizadas por desenvolvedores para gerenciar códigos. Estas ferramentas podem ser utilizadas
+      para gerenciar qualquer tipo de arquivo, podem ser efetivas, relativamente fáceis de
+      implementar e são menos caras que um sistema do tipo EDMS.</p>
+    <p>Como com qualquer processo de controle de mudança, mudanças na planilha devem ter um registro
+      de mudança que inclua uma descrição da mudança e uma avaliação do impacto. Quando apropriado,
+      os testes associados a esta função devem ser documentados.</p>
+
+    <h3>Controle de Infraestrutura</h3>
+    <p>Ambientes nos quais a planilha é instalada pertencem à Categoria 1 de <i>Software</i>. Estas
+      ferramentas provêm ambiente de aplicação para planilhas, bancos de dados, roteiros ou roteiros
+      que são desenvolvidos por usuários.</p>
+    <p>A instalação do ambiente deve ser verificada e o ambiente deve ser gerenciado quanto a
+      mudanças e quanto a sua configuração.</p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

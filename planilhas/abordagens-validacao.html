@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ABORDAGENS PARA VALIDAÇÃO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../topicos-relacionados/planilhas.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+
+  <div class="content">
+    <h2>ABORDAGENS PARA VALIDAÇÃO</h2>
+    <p>A seguir são apresentadas 06 (seis) diferentes aplicações para usuário final e um resumo breve das abordagens
+      potenciais com base em considerações sobre o impacto nas BPF e na
+      complexidade da aplicação. São exemplos ilustrativos e não são definitivos.</p>
+
+    <h3>Tipo A – Planilhas Simples para Cálculos</h3>
+    <p>Avaliação: alto impacto e baixa complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Preparação do ERU(URS);</li>
+      <li>Verificação documentada, realizada por uma terceira pessoa de que os cálculos
+        são os corretos;</li>
+      <li>Segurança para assegurar que é protegida contra mudança não autorizada;</li>
+      <li>Segurança para assegurar que os usuários possam acessar somente as versões aprovadas;</li>
+      <li>Armazenagem segura do documento eletrônico.</li>
+    </ul>
+    </p>
+    <h3>Tipo B – Planilha para Registro de Treinamento</h3>
+    <p>Avaliação: baixo impacto e baixa complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Nenhuma funcionalidade específica necessita de especificação e verificação;</li>
+      <li>Controles padrão para documentos eletrônicos contendo evidência para atendimento às BPF.</li>
+    </ul>
+    </p>
+    <h3>Tipo C – Banco de Dados de Área de Trabalho</h3>
+    <p>Avaliação: alto impacto e média complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Abordagem típica de Categoria 4: plano de validação; ERU/URS; Especificação
+        Projeto/Funcional (pode ser combinada); rastreabilidade; testes documentados,
+        com critérios de aceitação pré-definidos; relatório de validação;</li>
+      <li>Segurança para limitar acesso somente para pessoas autorizadas;</li>
+      <li>Controle de mudanças.</li>
+    </ul>
+    </p>
+    <h3>Tipo D - Planilhas para Análises Estatísticas – Estudo Clínico</h3>
+    <p>Avaliação: alto impacto e alta complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Abordagem típica de Categoria 5: plano de validação; ERU/URS; Especificação
+        Projeto/Funcional (pode ser combinada); rastreabilidade; testes documentados, c
+        om critérios de aceitação pré-definidos; relatório de validação;</li>
+      <li>Segurança para limitar acesso somente para pessoas autorizadas;</li>
+      <li>Controle de mudanças.</li>
+    </ul>
+    </p>
+    <h3>Tipo E - Planilhas para Análises Estatísticas – Dados de Producao</h3>
+    <p>Exemplo: análises estatísticas de dados de producao, para controle estatistico de
+      parametros de processo, definidos a partir da validação do processo produtivo.</p>
+    <p>Avaliação: baixo impacto e alta complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Verificação documentada, realizada por uma terceira pessoa de que os cálculos são os
+        corretos;</li>
+      <li>Controle de mudanças;</li>
+      <li>Segurança para assegurar que é protegida contra mudança não autorizada;</li>
+      <li>Segurança para assegurar que os usuários possam acessar somente as versões aprovados.</li>
+    </ul>
+    </p>
+
+    <h3>Tipo F – Bancos de dados de Área de Trabalho – Rastreabilidade de Materiais Produtivos</h3>
+    <p>Exemplo: disposição de rótulos impressos.</p>
+    <p>Avaliação: médio impacto e média complexidade.</p>
+    <p>Abordagem recomendada:
+    <ul>
+      <li>Abordagem típica de Categoria 4: plano de validação; ERU/URS; Especificação
+        Projeto/Funcional (pode ser combinada); rastreabilidade; testes documentados,
+        com critérios de aceitação pré-definidos; relatório de validação;</li>
+      <li>Segurança para limitar acesso somente para pessoas autorizadas;</li>
+      <li>Controle de mudanças.</li>
+    </ul>
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>
