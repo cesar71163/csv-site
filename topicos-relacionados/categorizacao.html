@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>CATEGORIZAÇÃO DE SOFTWARE E HARDWARE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../ciclo-de-vida.html">Ciclo de Vida</a></li>
+      <li><a href="../projeto.html">Projeto</a></li>
+      <li><a href="../operacao.html">Operação</a></li>
+      <li><a href="../aposentadoria.html">Aposentadoria</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>CATEGORIZAÇÃO DE <i>SOFTWARE</i> E <i>HARDWARE</i></h1>
+    <h2>INTRODUÇÃO</h2>
+    <p>Esta seção descreve como os componentes <i>software</i> e <i>hardware</i> podem ser analisados e categorizados.
+      As categorias de <i>software</i> e <i>hardware</i> podem então ser utilizadas juntamente com a Avaliação de Risco
+      e Avaliação do Fornecedor para estabelecer uma estratégia de ciclo de vida adequada.</p>
+    <p>Algumas categorias não possuem fronteiras absolutas e as atividades recomendadas para uma dada categoria podem
+      ser adequadas para sistemas ou componentes que pertençam à outra categoria.</p>
+
+    <h2>UTILIZAÇÃO DAS CATEGORIAS DO GAMP</h2>
+    <p>Geralmente há um aumento do risco de falhas e defeitos quando se faz uma progressão de um
+      conjunto <i>software-hardware</i> padrão para um conjunto <i>software-hardware</i> customizado.
+      O aumento do risco vem da combinação de uma maior complexidade e menor experiência do usuário.
+      A categorização pode ser parte de uma abordagem efetiva de gerenciamento do risco à qualidade quando acoplada com
+      avaliação de risco e avaliação do fornecedor.</p>
+    <p>A maioria dos sistemas possui componentes de complexidade variável, tais como um sistema
+      operacional, componentes não configurados, e componentes configurados ou customizados.
+      O esforço deve ser concentrado na seguinte proporção:
+      Customizado > Configurado > Não-Configurado > Infraestrutura.
+      A categorização pode ajudar a concentrar o esforço onde o risco é maior.</p>
+
+    <p>Há dois modos principais de ser utilizar as categorias:
+      <ul>
+        <li>Avaliação do sistema de modo holístico;</li>
+        <li>Avaliação detalhada por componente.</li>
+      </ul>
+    </p>
+
+    <p>Na avaliação holística, a categoria do componente principal pode ser utilizada para ajudar a definir a abordagem
+      para avaliação do fornecedor ou seleção dos resultados a serem entregues no ciclo de vida. A combinação da
+      categorização com a avaliação do impacto do sistema pode ajudar a decidir se uma auditoria no fornecedor é
+      necessária.</p>
+    <p>Na avaliação individualizada, a categorização é útil quando aplicada em conjunto com outras ferramentas de
+      gerenciamento de risco e com consideração da complexidade e tamanho do sistema.
+      A maioria dos sistemas computadorizados é formada por múltiplos componentes e a categorização de tais componentes
+      podem ser utilizadas para a definição das atividades específicas do ciclo de vida.</p>
+    <p>Por exemplo, um sistema de gerenciamento cromatográfico (CDS) possui um <i>software</i> de
+      controle e de dados instalado no computador e que roda em um sistema operacional e um banco de dados, juntamente
+      com subsistemas com <i>firmware</i> instalado, tais como controladores de bomba, auto-injetores e fornos de
+      colunas. Neste contexto, estes últimos componentes são muito menos complexos do que o <i>software</i> de dados e
+      controle, sendo assim é razoável que seja gasto mais esforço na aplicação instalada no computador do que nos
+      subsistemas.</p>
+    <p>Um Controlador Lógico Programável (PLC) ou outro controlador pode ser parte integrada de um equipamento de
+      processo e a verificação da operação correta faz parte da verificação geral do equipamento integrado. Em tais
+      casos, análise detalhada das categorias dos componentes individuais pode não ser necessária.</p>
+
+
+    <h2>CATEGORIAS DE <i>SOFTWARE</i></h2>
+
+    <h3>Categoria 1 – <i>Software</i> de Infraestrutura</h3>
+    <p>Elementos de infraestrutura se interligam para formar um ambiente integrado para rodar e
+      suporte a aplicações e serviços.</p>
+
+    <p>
+      Há dois tipos de <i>software</i> nesta categoria:
+      <ol>
+        <li><b><i>Softwares</i> de Camada (<i>Layered Software</i>) Comercialmente Disponíveis ou
+            Estabelecidos</b> – Aplicações são desenvolvidas para rodar sob o controle deste tipo de
+          <i>software</i>. Este tipo de <i>software</i> inclui: sistemas operacionais, gerenciadores de banco de dados,
+          ferramentas de programação estatística, e pacotes de planilhas (mas não aplicações desenvolvidas utilizando-se
+          estes pacotes).</li>
+        <li><b>Ferramentas de <i>Software</i> de Infraestrutura</b> – Este tipo inclui ferramentas
+          tais como: <i>software</i> de monitoramento de rede, ferramentas de agendamento de tarefas
+          em lote; <i>software</i> de segurança, antivírus e ferramentas de gerenciamento da
+          configuração. Uma avaliação de risco deve ser realizada nas ferramentas com alto
+          impacto potencial, tais como, gerenciamento de senha ou de segurança para se determinar
+          se controles adicionais são apropriados.</li>
+      </ol>
+    </p>
+    <p>Os <i>softwares</i> de camada não são sujeitos a verificação funcional específica, embora as
+      suas características sejam testadas funcionalmente e desafiadas indiretamente durante a
+      realização de testes na aplicação. As identidades e os números das versões do <i>software</i>
+      de camada e do sistema operacional devem ser documentados e verificados durante a instalação.</p>
+    <p>As ferramentas e os <i>softwares</i> de infraestrutura geralmente são altamente confiáveis e
+      significativamente removidos de qualquer aspecto de risco ao paciente. Todos os <i>softwares</i> de infraestrutura
+      devem ser controlados e gerenciados.</p>
+
+    <h3>Categoria 3 – Produtos Não-Configurados</h3>
+
+    <p>Esta categoria inclui os produtos de prateleira utilizados para o processo de negócio. Abrange tanto os sistemas
+      que não podem ser configurados para atender aos processos de negócios quanto os sistemas que são configuráveis,
+      mas que somente a configuração <i>default</i> é utilizada. Em ambos os casos, a configuração para rodar no
+      ambiente do usuário é possivel (ex.:
+      configuração de impressora). Julgamento com base no risco e complexidade deve determinar se
+      os sistemas utilizados somente com a configuração default podem ser considerados Categoria
+      3 ou 4.</p>
+    <p>Uma abordagem simplificada para o ciclo de vida pode ser aplicada a esta categoria.
+      A necessidade e extensão da avaliação do fornecedor devem ser baseadas no risco, sendo que
+      em algumas situacoes pode-se chegar a conclusao de que pode não ser necessária a avaliação do
+      fornecedor. Requisitos do usuário são necessários e devem ter como foco os aspectos-chave de
+      utilização. As especificações funcionais e de projeto não são necessárias, embora haja a necessidade de existir
+      especificação suficiente (normalmente no ERU/URS) para permitir a realização de testes. A verificação consiste
+      basicamente em uma fase de testes única.</p>
+    <p>Todas as mudanças devem ser controladas, incluindo os pacotes de “<i>patches</i>” fornecidos
+      pelo fornecedor. Procedimentos Operacionais Padrão devem ser estabelecidos para uso e
+      gerenciamento do sistema e planos de treinamento devem ser implantados.</p>
+    <p>Gerenciamento da configuração deve ser aplicado. Para sistemas onde a configuração
+      <i>default</i> é utilizada, o gerenciamento da configuração demonstra que a opção
+      “<i>default</i>” esteja selecionada corretamente.</p>
+
+    <h3>Categoria 4 – Produtos Configurados</h3>
+    <p><i>Softwares</i> configuráveis fornecem <i>interfaces</i> e funções padrão que permitem a
+      configuração de processos de negócio específico para o usuário. Isto envolve normalmente a
+      configuração de módulos de software predefinidos.</p>
+    <p>Muito do risco associado com o <i>software</i> depende do quão bem o sistema é configurado para atender as
+      necessidades do usuário. Pode haver um aumento do risco associado ao novo
+      <i>software</i> e atualizações maiores.</p>
+    <p>É preciso haver documento de requisitos do usuário (ERU/URS) detalhado para esta categoria de
+      <i>software</i>. A abordagem para avaliação do fornecedor e do produto configurável deve ser
+      baseada no risco e deve ser documentada.</p>
+    <p>O documento de Especificação Funcional pode não ser de propriedade do usuário/empresa regulada, mas deve haver
+      documentação suficiente para assegurara rastreabilidade das especificações funcionais e seus respectivos testes.
+    </p>
+    <p>A abordagem utilizada pela empresa regulada deve abranger as camadas de <i>software</i>
+      envolvidas e suas respectivas categorias. A abordagem deve refletir o resultado da avaliação
+      do fornecedor, o risco às BPF, tamanho e complexidade do sistema. Ela deve definir as
+      estratégias para mitigação de quaisquer fraquezas identificadas durante o processo de
+      avaliação do fornecedor.</p>
+
+    <h3>Categoria 5 – Aplicações Customizadas</h3>
+    <p>Estes sistemas e subsistemas são desenvolvidos para atender a necessidades específicas da
+      empresa regulada. O risco inerente ao software customizado é alto. A abordagem de ciclo de vida e as decisões
+      acerca do sistema devem levar em consideração este risco alto, porque não existe experiência do usuário ou
+      informação sobre confiabilidade do sistema.</p>
+    <p>A abordagem utilizada para avaliação do fornecedor deve ser baseada no risco e documentada.
+      Uma auditoria no fornecedor é necessária para confirmar que existe um Sistema de
+      Gerenciamento da Qualidade adequado para controlar o desenvolvimento e suporte contínuo para a
+      aplicação. Na ausência de um Sistema Gerenciamento da Qualidade adequado, os fornecedores
+      devem se adequar para pode proporcionar uma base apropriada para o gerenciamento do
+      desenvolvimento e suporte da aplicação.</p>
+    <p>A abordagem utilizada pela empresa regulada deve abranger as camadas de <i>software</i>
+      envolvidas e suas respectivas categorias. A abordagem deve refletir o resultado da avaliação
+      do fornecedor, o risco às BPF, tamanho e complexidade do sistema. Ela deve definir as
+      estratégias para mitigação de quaisquer fraquezas identificados durante o processo de
+      avaliação do fornecedor.</p>
+
+    <a href="../outros/exemplos-abordagens.html" target="_blank">Exemplos Típicos e Abordagens -
+      Categorias 1 e 3</a><br>
+
+    <a href="../outros/exemplos-abordagens-1.html" target="_blank">Exemplos Típicos e Abordagens -
+      Categorias 4 e 5</a><br>
+
+    <h2>CATEGORIAS DE <i>HARDWARE</i></h2>
+    <h3><i>Hardware</i> Categoria 1 – Componentes Padrão de Hardware</h3>
+    <p>A maioria dos <i>hardware</i> utilizados por empresas reguladas pertencem a esta categoria.</p>
+    <p>Os componentes do <i>hardware</i> padrão devem ser documentados incluindo detalhes acerca do
+      fornecedor ou fabricante e número de versão. A correta instalação e conexões dos componentes
+      devem ser verificadas. O modelo, o número de versão e se disponível e o número de série do
+      <i>hardware</i> pré-montado devem ser registrados. <i>Hardware</i> pré-montados não tem de ser
+      desmontados. Em tais casos os detalhes do <i>hardware</i> podem ser adquiridos a partir da
+      folha de dados do <i>hardware</i> ou outra especificação do material. Gerenciamento da
+      configuração e controle de mudanças são aplicáveis.</p>
+
+    <h3><i>Hardware</i> Categoria 2 – Componentes Customizados Embutidos de <i>Hardware</i></h3>
+    <p>Itens customizados de <i>hardware</i> devem possuir uma Especificação de Projeto (EP/DS) e serem sujeitos a
+      testes de aceitação. A abordagem para avaliação do fornecedor deve ser baseada no risco e documentada. Na maioria
+      dos casos uma Auditoria no Fornecedor deve ser realizada para desenvolvimento de <i>hardware</i> customizado.
+      Sistemas montados utilizando-se <i>hardware</i>
+      customizado de diferentes fontes requerem verificação para confirmar a compatibilidade dos
+      componentes de <i>hardware</i> interconectados. Qualquer configuração de <i>hardware</i> deve ser definida na
+      documentação de projeto e verificada. Gerenciamento da configuração e controle de mudanças são aplicáveis.</p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"><
+</body>
+
+</html>

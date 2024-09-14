@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MIGRACAO DE DADOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../index.html" target="_blank">Início</a></li>
+      <li><a href="../ciclo-de-vida.html" target="_blank">Ciclo de Vida</a></li>
+      <li><a href="../projeto.html" target="_blank">Projeto</a></li>
+      <li><a href="../operacao.html" target="_blank">Operação</a></li>
+      <li><a href="../aposentadoria.html" target="_blank">Aposentadoria</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>MIGRAÇÃO DE DADOS</h1>
+    <h2>INTRODUÇÃO</h2>
+    <p>Esta seção abrange os procedimentos relacionados ao planejamento, execução e verificação das
+      atividades de migração de dados.</p>
+    <p>Não abrange a transferência de dados de um sistema para outro, dentro de um processo de negócio em andamento. Tal situação deve ser abordada por meio de atividades de especificação e
+      verificação típicas.</p>
+    <p>A migração de dados é uma atividade que pode ocorrer frequentemente durante os ciclos de vida
+      dos sistemas computadorizados utilizados por empresas reguladas.</p>
+    <p>Migração de dados é a atividade de transportar dados eletrônicos de um sistema para outro,
+      ou simplesmente a transição de dados de um sistema para outro.</p>
+
+    <p>
+      Alguns exemplos de migração de dados são:
+    <ul>
+      <li>Uma atualização de uma versão em vigor de um banco de dados ou aplicação;</li>
+      <li>Conversão de dados (ex.: de um banco de dados de um fornecedor para outro);</li>
+      <li>Migração dentro do mesmo sistema (ex.: transporte de dados de uma aplicação de uma
+        plataforma do servidor para outra);</li>
+      <li>Migração de um sistema-origem para um sistema-alvo;</li>
+      <li>Migração de multiplos sistemas-origem para um sistema-alvo;</li>
+    </ul>
+    </p>
+    <p>A complexidade e o risco envolvido no esforço de migração de dados podem aumentar
+      significativamente se, regras forem utilizadas para a seleção de um subconjunto de dados do
+      sistema-origem ou se dados forem transformados (ex.: conversão do tipo
+      de dados; filtragem; limpeza; agregação; normalização) antes de serem inseridos no sistema-alvo.
+      O objetivo final de qualquer migração de dados é o de se obter dados que permaneçam utilizáveis e retenham seu significado contextual. Controles de gerenciamento da qualidade devem existir
+      para assegurar que os esforços de migração de dados sejam bem-sucedidos, compatíveis e
+      repetíveis.</p>
+    <p>Cada atividade de migração de dados deve ser gerenciada por meio de plano e relatório.</p>
+
+    <h2>GERENCIAMENTO DA QUALIDADE</h2>
+
+    <h3>Ciclo de Vida do Sistema</h3>
+    <p>
+      A migração de dados pode ocorrer muitas vezes durante o ciclo de vida de um sistema
+      computadorizado, nas seguintes situações:
+    <ul>
+      <li>Durante o desenvolvimento e implantação inicial do sistema;</li>
+      <li> Durante as atualizações da aplicação;</li>
+      <li>Durante a aposentadoria do sistema.</li>
+    </ul>
+    </p>
+    <p>Como acontece com outras fases e atividades do ciclo de vida, as atividades de migração de
+      dados serão mais consistentes e bem-sucedidas se o ciclo de vida contém procedimentos,
+      ferramentas, templates e exemplos de migração de dados.</p>
+    <p>
+      Um ciclo de vida completo deve prover orientação para todos os aspectos relacionados à migração de dados, incluindo:
+    <ul>
+      <li>Papéis e responsabilidades;</li>
+      <li>Requisitos de documentação;</li>
+      <li>Controles de qualidade e conformidade;</li>
+      <li>Atividades técnicas e de verificação;</li>
+      <li>Gerenciamento de projeto.</li>
+    </ul>
+    </p>
+    <p>Um procedimento operacional padrão é o melhor método para descrição e documentação do processo, incluindo os requisitos de qualidade e conformidade.</p>
+
+    <h3>Gerenciamento de Risco</h3>
+    <p>
+      O ciclo de vida deve incluir um processo de gerenciamento de risco estabelecido, para avalição
+      de riscos que são específicos para as atividades relacionadas aos sistemas computadorizados.
+      Adicionalmente aos riscos normalmente encontrados em projetos tecnológicos, os seguintes itens devem ser avaliados quando se realiza a migração de dados regulados:
+    <ul>
+      <li>O risco inerente à qualidade e conformidade associadas à migração dos dados, tais como: o
+        impacto à segurança do paciente, qualidade do produto e integridade; </li>
+      <li>O risco relacionado aos processos de negócio associados ao sistema computadorizado
+        envolvido; </li>
+      <li>O risco ao negócio devido ao sistema ficar indisponível ou os dados migrados não serem
+        confiáveis;</li>
+      <li>O nível de complexidade (ex.: múltiplas origens ou sistemas-alvo; múltiplas fases; muita
+        transformação de dados);</li>
+      <li>Risco tecnológico devido ao uso de sistemas ou ferramentas complexas ou de ponta.</li>
+    </ul>
+    </p>
+
+    <h3>Gerenciamento da Configuração e Controle de Mudanças</h3>
+    <p>
+      A migração de dados eletrônicos no ambiente regulado deve ser executada sob controle de mudança. Igualmente, todos os documentos e ferramentas utilizados no projeto de migração de dados devem ser controlados, utilizando-se o gerenciamento de configuração.</p>
+    <p>Durante a execução do projeto de migração, mudanças no sistema não relacionadas à migração
+      devem ser proibidas. O motivo é que o sucesso do esforço de migração de dados depende de
+      várias características dos sistemas (ex.: versões de <i>software</i>,
+      esquemas de banco de dados) que devem permanecer inalteradas durante o projeto. Estas mudanças
+      podem aumentar a complexidade da migração dos dados e o risco do projeto como um todo.</p>
+
+    <h2>PONTOS IMPORTANTES</h2>
+
+    <h3>Adequação das Ferramentas de <i>Software</i> ao Uso Pretendido</h3>
+    <p>A migração de dados normalmente envolve a utilização de ferramentas de software para
+      automatizar algumas ou todas as atividades de extração, transformação, carregamento e
+      verificação. Estas ferramentas tendem a pertencer à categoria 1 do GAMP –
+      ferramentas de infraestrutura (ex.: migradores de banco de dados e verificadores, adquiridos
+      de um fornecedor de <i>software</i>) ou à categoria 5 – aplicações customizadas (ex.: roteiros
+      SQL, robôs de migração de dados, programas desenvolvidos
+      internamente).</p>
+    <p>As ferramentas de infraestrutura devem ser adequadas para o uso pretendido. O rigor das
+      atividades de especificação e verificação relacionadas devem ser proporcionais aos riscos
+      associados. Dependendo do escopo, complexidade e customização das
+      ferramentas de <i>software</i> utilizadas, os requisitos de validação podem variar desde a
+      obtenção de evidência da realização de testes básicos até a preparação de especificações
+      completas do software e sua verificação formal.</p>
+    <p>O Especialista no Assunto (SME) deve assegurar que as atividades adequadas do ciclo de vida
+      e os objetivos a serem atingidos sejam identificados e executados.</p>
+    <p>A Unidade da Qualidade deve revisar e aprovar a documentação-chave, de acordo com os
+      procedimentos da empresa.</p>
+    <p>Para as ferramentas de software que movem ou transformam dados, são três as principais
+      áreas de risco:
+    <ol>
+      <li>Os dados serem movidos ou transformados incorretamente ou incompletamente;</li>
+      <li>Os dados já existentes no sistema-alvo serem prejudicados;</li>
+      <li>No caso de que sejam migrados apenas parte dos dados, os dados residuais do sistema-origem
+        serem adversamente afetados pela remoção dos dados migrados.</li>
+    </ol>
+    </p>
+    <p>É importante que seja desenvolvida e aprovada uma tabela de mapeamento de dados (i.e., campos
+      do modelo de dados do sistema de origem mapeados para o modelo de dados do sistema de
+      destino), quando se utiliza ferramentas de <i>software</i> para migração.</p>
+
+    <h3>Verificação dos Dados</h3>
+    <p>Os dados devem ser verificados sempre que forem movidos ou transformados. Há dois tipos gerais
+      de verificação pós-migração dos dados: a verificação em ambiente de testes e a verificação em
+      ambiente operacional.</p>
+    <p>Na verificação em ambiente de testes, um sistema-alvo teste é inicialmente preenchido com
+      dados, então um teste de migração é executado e finalmente os dados no sistema-alvo são
+      verificados para demonstrar que todos os dados migraram com sucesso e sem afetar adversamente
+      os dados existentes. Esta verificação fornece evidência objetiva de que a ferramenta de
+      <i>software</i> é adequada ao uso pretendido e fornece um nível de confiança sobre o
+      processo de migração de um modo geral.</p>
+    <p>A intenção da verificação no ambiente operacional é a mesma: verificar o resultado do processo de migração tanto nos dados migrados quando nos dados existentes. A quantidade de dados
+      envolvida, contudo, é normalmente muito maior e, portanto, mais difícil de ser verificar.
+      Há duas abordagens gerais para solucionar este problema: amostragem de dados e ferramentas
+      automatizadas de verificação de dados.</p>
+    <p>Na amostragem de dados, uma amostra estatística da população dos dados migrados e/ou existentes é verificada no sistema destino ou alvo. Padrões tais como ANSI/ASQ Z1.4 e ISO 2859, podem ser utilizados para se determinar o tamanho de amostra apropriado para verificar a conformidade da inteira população de dados no nível de confiança desejado.
+    <p>As ferramentas de <i>software</i> automatizadas podem ser utilizadas para verificar 100% dos
+      dados no sistema-alvo ou destino. Contudo, estas ferramentas apresentam um nível de risco mais
+      alto e consequentemente a sua adequação deve ser rigorosamente determinada.</p>
+    <p>Uma parte importante da migração de dados é a confirmação de que todos os dados necessários
+      foram migrados. Técnicas de verificação, tais como <i>checksum</i>, podem ser utilizadas para
+      corroborar a transmissão completa dos dados.</p>
+    <p>Evidência objetiva da verificação dos dados deve ser gerada. Roteiros de verificação e folhas
+      de dados, cópias de telas, registros de erros e relatórios em papel devem ser criados quando
+      apropriado e factível.</p>
+
+    <h3>Confiabilidade dos Dados de Origem</h3>
+    <p>Se o sistema de origem é mantido em atendimento aos requisitos regulatórios, então a combinação
+      dos controles do sistema de origem com os controles realizados durante o processo de migração
+      deve prover garantia suficiente da exatidão e da integridade dos dados migrados.</p>
+    <p>Para documentar isto, o plano de migração de dados deve referenciar a apropriada documentação
+      do sistema de origem.</p>
+    <p>Se a situação do sistema de origem é desconhecida, então há dois problemas: primeiro, a
+      veracidade dos dados migrados do sistema de origem pode não ser confiável; e segundo, os dados
+      migrados irão se misturar com os dados confiáveis já existentes no sistema destino controlado. Após a migração, os dados existentes confiáveis e os dados não confiáveis estarão misturados e de difícil distinção a não ser que sejam tomadas ações para identificar os dados migrados, tais como: diferenças nas datas de registro e anotações em campos definidos pelo usuário. Se isto não for possível, então as possíveis inconsistências de dados devem ser documentadas, explicando os controles existentes no sistema de origem e a justificativa do porquê os dados migrados devem ser confiáveis.</p>
+
+    <h3>Usabilidade dos Dados Migrados no Sistema de Destino</h3>
+    <p>Há três problemas principais a serem considerados, relacionados à usabilidade dos dados
+      migrados para o sistema destino:
+    <ol>
+      <li>A funcionalidade do sistema destino não permite o desempenho de tarefas previamente
+        executadas no sistema de origem;</li>
+      <li>Falta de completude dos dados migrados afeta a usabilidade dos dados;</li>
+      <li>Pode não ser suficiente migrar os dados. Migração separada dos metadados ou configuração do
+        sistema destino pode ser necessária. Por exemplo, os dados de origem têm alguns direitos de
+        acesso definido para eles, tais como grupos de usuários e direitos dos usuários.
+        A migração dos dados pode não migrar estes metadados, que são normalmente separados dos
+        dados. Contudo, estes grupos e direitos de usuários podem também ser necessários no
+        sistema destino.</li>
+    </ol>
+    </p>
+
+    <h3>Trilhas de Auditorias (<i>Audit trails</i>)</h3>
+    <p>Trilhas de auditorias podem ser problemáticas para o processo de migração de dados. Se o
+      sistema destino possui uma trilha de auditoria, mas o sistema de origem não, deve ser criado um documento refletindo que a auditoria dos registros migrados começaram quando eles foram
+      transferidos para o sistema destino. Se possível, estes registros devem ser distinguíveis dos
+      registros que foram gerados no sistema destino.</p>
+    <p>Se ambos os sistemas possuem trilhas de auditorias e a migração for factível, a trilha de
+      auditoria deve ser migrada juntamente com os dados auditados. Se for tecnicamente impossível
+      migrar a trilha de auditoria ou fazer isto constituiria um risco muito grande, a trilha de auditoria original deve ser arquivada em um formato que possa ser recuperada ao longo do tempo.</p>
+    <p>Quando possível, uma trilha de auditoria criada pelo computador deve ser criada durante as
+      atividades de movimentação e transformação associadas à migração dos dados, pois esta trilha
+      de auditoria serve não apenas como uma ferramenta de verificação, mas também como um registro histórico das mudanças nos dados e deve ser arquivada em um formato que possa ser recuperada ao longo do tempo.</p>
+
+    <h2>PLANO DE MIGRAÇÃO DE DADOS</h2>
+    <p>Diferentes tipos de migração de dados requerem diferentes atividades e objetivos. Cada processo de migração de dados deve possuir um plano para migração de dados. Este plano serve como um roteiro de alto nível que orienta o time que realiza a migração a executá-la de modo adequado.</p>
+    <p>Este plano deve descrever todo o processo de migração, incluindo:
+    <ul>
+      <li>Propósito e escopo do projeto de migração;</li>
+      <li>Descrição do(s) sistema(s);</li>
+      <li>Papéis e responsabilidades;</li>
+      <li>Objetivos a serem atingidos;</li>
+      <li>Estratégia para gerenciamento do risco;</li>
+      <li>Estratégia para o gerenciamento da configuração, incluindo os ambientes de origem,
+        estacionário e de destino;</li>
+      <li>Visão geral e estratégia da ferramenta de <i>software</i> para assegurar a conformidade e
+        adequação ao uso pretendido;</li>
+      <li> Etapas de migração e atividades técnicas;</li>
+      <li>Atividades de mapeamento e modelagem de dados;</li>
+      <li>Regras de transformação;</li>
+      <li>Estratégia de verificação de dados e critérios de aceitação;</li>
+      <li>Plano de transição;</li>
+      <li>Estratégia de reversão.</li>
+    </ul>
+    </p>
+    <p>O plano para migração deve ser aprovado pelo dono do processo, dono do sistema, Unidade da
+      Qualidade e Especialista no assunto, quando apropriado.</p>
+    <p>Podem ocorrer situações onde o plano de migração poderá ser utilizado mais de uma vez. Quando
+      isto ocorrer, um relatório de migração de dados deve ser gerado.</p>
+
+    <h2>RELATÓRIO DE MIGRAÇÃO DE DADOS</h2>
+    <p>O relatório de migração de dados resume as atividades que foram conduzidas durante o processo
+      de migração. Descreve quaisquer anomalias ou desvios ocorridos e lista os resultados das
+      atividades de verificação, incluindo evidência objetiva, quando apropriado.</p>
+    <p>Pelo fato de o relatório ser utilizado para estabelecer a confiabilidade dos dados migrados,
+      ele deve declarar claramente o resultado da atividade de migração.</p>
+    <p>O relatório de migração de dados deve ser aprovado pelo dono do processo, dono do sistema,
+      Unidade da Qualidade e especialista no assunto, quando apropriado.</p>
+    <p>No caso em que a atividade de migração de dados for realizada como parte de um projeto de
+      sistema computadorizado, tal como substituição ou atualização, o relatório pode ser registrado
+      dentro da documentação do projeto e não precisa haver um documento separado.</p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"><
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>6. GERENCIAMENTO DO RISCO À QUALIDADE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../index.html" target="_blank">Início</a></li>
+      <li><a href="../ciclo-de-vida.html" target="_blank">Ciclo de Vida</a></li>
+      <li><a href="../projeto.html" target="_blank">Projeto</a></li>
+      <li><a href="../operacao.html" target="_blank">Operação</a></li>
+      <li><a href="../aposentadoria.html" target="_blank">Aposentadoria</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>GERENCIAMENTO DO RISCO À QUALIDADE</h1>
+    <h2>INTRODUÇÃO</h2>
+    <p>O gerenciamento do risco à qualidade consiste em um processo sistemático para avaliação,
+      controle, comunicação e revisão dos riscos.
+      É um processo interativo utilizado durante todo o ciclo de vida do sistema computadorizado,
+      desde sua concepção até a aposentadoria. A figura abaixo apresenta graficamente esse conceito.</p>
+    <div class="">
+      <img src="../images/gerenciamento-risco.png" alt="Uma Abordagem Baseada em Risco para Sistemas
+    Computadorizados Compatíveis com as BPx." width="800px" height="500px" />
+      <figcaption><b>Figura.</b> Uma Abordagem Baseada em Risco para Sistemas Computadorizados
+        Compatíveis com as BPx. <b>Fonte:</b> GAMP5.</figcaption>
+    </div>
+
+    <h2>GERENCIAMENTO DO RISCO À QUALIDADE COM BASE CIENTÍFICA</h2>
+    <p>A determinação dos riscos inerentes a um sistema computadorizado requer entendimento dos
+      seguintes pontos:
+    <ul>
+      <li>O impacto do sistema computadorizado na segurança do paciente, na qualidade do produto e
+        na integridade dos dados;</li>
+      <li>Os processos de negócios suportados pelo sistema;</li>
+      <li>Os Atributos Críticos de Qualidades (CQA) para os sistemas que monitoram ou controlam os
+        Parâmetros Críticos de Processo (CPPs);</li>
+      <li>Os requisitos dos usuários;</li>
+      <li>Os requisitos regulatórios;</li>
+      <li>A abordagem do projeto (contratos, métodos, cronogramas);</li>
+      <li>Componentes do sistema e arquitetura;</li>
+      <li>Funções do sistema;</li>
+      <li>Capabilidade do fornecedor.</li>
+    </ul>
+    </p>
+    <p>A empresa deve também considerar outros riscos aplicáveis tais como segurança, saúde e
+      meio-ambiente.</p>
+
+    <h2>PROCESSO DE GERENCIAMENTO DO RISCO À QUALIDADE</h2>
+    <p>O guia internacional ICH Q9 trata sobre o gerenciamento do risco à qualidade dentro da
+      indústria farmacêutica.</p>
+    <p>Ele define os dois princípios primários do gerenciamento do risco à qualidade, a saber:
+    <ul>
+      <li>A avaliação do risco à qualidade deve ser baseada no conhecimento científico e ser
+        interligado à proteção do paciente;</li>
+      <li>O nível de esforço, a formalidade e a documentação do processo de gerenciamento do risco à
+        qualidade devem ser comensurados com o nível do risco.</li>
+    </ul>
+    </p>
+    <p>No contexto dos sistemas computadorizados, o conhecimento científico e baseado nas
+      especificações do sistema e o processo de negócio envolvido.</p>
+    <p>O processo para gerenciamento do risco à qualidade envolve a execução de 05 (cinco) etapas:
+    <ol>
+      <li>Execução da avaliação de risco inicial e determinação do impacto do sistema;</li>
+      <li>Identificação das funções que tenham impacto na segurança do paciente, na qualidade do
+        produto e na integridade dos dados;</li>
+      <li>Execução das avaliações de risco funcionais e identificação dos controles necessários;</li>
+      <li>Implantação e verificação dos controles apropriados;</li>
+      <li>Revisão dos riscos e monitoramento dos controles implantados.</li>
+    </ol>
+    </p>
+    <p>Estas etapas são detalhadas a seguir.</p>
+
+    <h3>Etapa 1 - Avaliação do Risco Inicial</h3>
+    <p>Deve ser realizada uma análise de risco inicial com base no entendimento dos processos e
+      avaliações dos riscos do negócio, nos requisitos do usuário, nos requisitos regulatórios e
+      áreas funcionais conhecidas.</p>
+    <p>Os resultados desta avaliação de risco inicial devem incluir a decisão sobre se o sistema
+      é regulado pelas BPx (avaliação de BPx). Também deve ser incluída uma avaliação geral do
+      impacto do sistema.</p>
+    <p>Com base nesta avaliação de risco inicial e do impacto do sistema pode-se concluir não ser
+      necessário realizar as etapas subsequentes se o risco já estiver em um nível aceitável.</p>
+    <p>O esforço necessário, a formalização e a documentação das etapas subsequentes devem ser
+      determinados com base no nível de risco e no impacto do sistema nas BPx.</p>
+
+    <h3>Etapa 2 - Identificação das Funções</h3>
+    <p>As funções que tenham impacto na segurança do paciente, na qualidade do produto na integridade dos dados devem ser identificadas pela construção da informação reunida na etapa  1, referindo-se às especificações relevantes e levando-se em conta a abordagem do projeto,
+      a arquitetura do sistema e a categorização dos componentes do sistema.</p>
+
+    <h3>Etapa 3 - Avaliação dos Riscos Funcionais</h3>
+    <p>As funções identificadas na etapa 2 devem ser avaliadas considerando-se os possíveis perigos e como os potenciais danos advindos destes perigos podem ser controlados.</p>
+    <p>Pode ser necessário executar uma avaliação mais detalhada que posteriormente analise a
+      severidade do dano, a probabilidade de ocorrência e a probabilidade de detecção.</p>
+    <p>O julgamento, sobre a realização ou não de uma avaliação detalhada de funções específicas, deve ser realizado caso a caso e o critério pode variar. Os critérios a serem levados em
+      consideração são:
+    <ul>
+      <li>A criticidade dos processos suportados;</li>
+      <li>O impacto específico das funções dentro do processo;</li>
+      <li>A natureza do sistema (complexidade e inovação).</li>
+    </ul>
+    </p>
+    <p>Controles apropriados devem ser identificados com base na avaliação realizada. Há uma gama de
+      opções disponível para se efetuar o requerido controle dependendo do risco identificado.
+      Os controles incluem, dentre outros:
+    <ul>
+      <li>Modificação do projeto do processo;</li>
+      <li>Modificação do projeto do sistema;</li>
+      <li>Aplicação de procedimentos externos;</li>
+      <li>Aumento dos detalhes ou formalidade das especificações;</li>
+      <li>Aumento do número e do nível dos detalhes das revisões de projeto;</li>
+      <li>Aumento da extensão ou do rigor das atividades de verificação.</li>
+    </ul>
+    </p>
+
+    <h3>Etapa 4 - Implantação e Verificação dos Controles </h3>
+    <p>As medidas de controle identificadas na etapa 3 devem ser implantadas e verificadas para
+      assegurar que sua implantação foi bem-sucedida. Os controles devem ser rastreáveis aos riscos
+      relevantes identificados.</p>
+    <p>As atividades de verificação devem demonstrar que os controles são efetivos na execução da
+      redução do risco requerida.</p>
+
+    <p>A existência de risco residual após a implantação de medidas de controle deve ser considerada, para se determinar se as estratégias de controle do sistema deveriam ser ajustadas.</p>
+    <p>Se o risco residual estiver acima do limite aceitável de risco, então controles apropriados
+      devem ser implantados e verificados e o seu impacto nas medidas de controle de risco previamente implantadas deve também ser considerado.</p>
+
+
+    <h3>Etapa 5 - Revisão dos Riscos e Monitoramento dos Controles</h3>
+    <p>Durante a execução da revisão periódica dos sistemas, ou em outras oportunidades definidas, a
+      empresa deve rever os riscos. A verificação deve evidenciar se os controles ainda são efetivos
+      e ações corretivas devem ser efetuadas se forem encontradas deficiências.</p>
+    <p>A empresa também deve considerar os seguintes pontos:
+    <ul>
+      <li>Se os perigos anteriormente não identificados estão presentes;</li>
+      <li>Se os perigos anteriormente identificados não são mais aplicáveis;</li>
+      <li>Se o risco estimado associado a um perigo não é mais aceitável;</li>
+      <li>Se a avaliação original está atualmente invalidada (ex.: após mudanças nas regulações
+        aplicáveis ou mudanças na utilização do sistema).</li>
+    </ul>
+    </p>
+    <p> Quando for necessário, os resultados da avaliação devem retroalimentar o processo de
+      gerenciamento de risco. Se houver um potencial de que o risco residual ou sua aceitabilidade
+      tenha mudado, o impacto sobre as medidas de controle de risco previamente implantadas tem de
+      ser considerado e o resultado desta avaliação devidamente documentada.</p>
+    <p>A frequência e a extensão de qualquer revisão periódica devem ter como base o nível de risco
+      associado.</p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"><
+</body>
+
+</html>
