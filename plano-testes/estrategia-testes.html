@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Estratégia de Testes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../projeto/plano-testes.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>Estratégia de Testes</h3>
+
+    <h4>Introdução</h4>
+    <p>A estratégia de testes, também conhecida como plano de testes, deve definir uma abordagem
+      adequada para a realização de testes em um sistema computadorizado específico.</p>
+    <p>A estratégia de testes é baseada nos seguintes pontos:
+      <ul>
+        <li>Resultados das avaliações de risco;</li>
+        <li>Um entendimento dos componentes do sistema (categorias GAMP), da complexidade e inovação do
+          sistema;</li>
+        <li>Resultados das avalições do fornecedor, se aplicável.</li>
+      </ul>
+    </p>
+    <p>A estratégia de testes varia de acordo com a categoria do sistema, variando de um sistema
+      simples da categoria 3 até um sistema complexo da categoria 5. A estratégia de testes deve ser
+      revisada e aprovada pelo Especialista no Assunto.</p>
+    <p>A estratégia de testes deve definir:
+      <ul>
+        <li>Que tipo de testes são necessários;</li>
+        <li>O número e o propósito das especificações de teste;</li>
+        <li>A utilização da documentação existente do fornecedor de acordo com a avaliação
+          realizada no fornecedor;</li>
+        <li>As fases de testes:</li>
+        <ul>
+          <li>Localização e duração de cada fase de testes;</li>
+          <li>Recursos necessários para cada fase de testes;</li>
+          <li>Responsabilidades por cada fase de testes.</li>
+        </ul>
+        <li>A abordagem utilizada para prover evidências da realização dos testes (ex.: impressões);</li>
+        <li>Procedimentos para gerenciamento das falhas nos testes;</li>
+        <li>Formato da documentação de testes;</li>
+        <li>A utilização de métricas de testes;</li>
+        <li>Utilização de testemunha visual da realização dos testes.</li>
+      </ul>
+    </p>
+
+    <h4>Documentação dos Testes</h4>
+    <p>A figura abaixo apresenta uma estrutura típica para a documentação de testes.</p>
+
+    <div>
+      <img src="../images/plano-testes.png" alt="Estrutura Típica para Documentação dos Testes.">
+    </div>
+    <figcaption><b>Figura:</b>Estrutura Tipica para Documentação dos Testes. <b>Fonte:</b> GAMP5</figcaption>
+    </p>
+
+    <p>A utilização de <i>templates</i> para realizar a documentação dos testes, tais como,
+      especificações de testes, registros dos resultados de testes e relatório de testes, ajuda na
+      consistência, facilita a revisão e evita erros nos documentos.</p>
+    <p>Nesta seção é descrito cada tipo de documento apresentado na figura acima.</p>
+
+    <h5>Estratégia de Testes</h5>
+    <p>Descrito na Introducao desta seção.</p>
+
+    <h5>Especificações de Testes</h5>
+    <p>São um conjunto de roteiros de testes que são adequados para um propósito específico de uma
+      fase específica de um projeto.</p>
+    <p>As especificações de teste devem cobrir, os seguintes pontos, quando aplicável:
+      <ul>
+        <li>Introdução;</li>
+        <li>Quem produziu o documento, sob que autoridade e para que propósito;</li>
+        <li>A situação contratual do documento definido;</li>
+        <li>Relacionamento a outros documentos;</li>
+        <li>Escopo – deve declarar onde a especificação de teste se encaixa na estratégia geral de
+          testes;</li>
+        <li>Os roteiros/casos de testes a serem executados;</li>
+        <li>Versão do <i>software</i> ou configuração em teste;</li>
+        <li>Propósito;</li>
+        <li>Recursos;</li>
+        <li>Pessoal necessário para realização de cada teste ou grupo de testes;</li>
+        <li>Métodos utilizados;</li>
+        <li>Qualquer agrupamento ou ordenamento lógico dos testes;</li>
+        <li>Pré-requisitos;</li>
+        <li>Ambiente;</li>
+        <li>Ferramentas, incluindo as ferramentas automatizadas de testes;</li>
+        <li>Referência às especificações;</li>
+        <li>Documentação necessária;</li>
+        <li>Revisões e aprovações necessárias.</li>
+      </ul>
+    </p>
+
+    <h5>Casos/Roteiros de Testes</h5>
+    <p>Os casos de testes/roteiros devem conter os detalhes dos testes. O roteiro de teste deve ser
+      descrito em detalhe suficiente para permitir a repetição consistente do teste.</p>
+    <p>Cada roteiro de teste deve, quando possível, incluir os seguintes pontos:
+      <ul>
+        <li>Referência de teste única;</li>
+        <li>Referência cruzada para controle da especificação;</li>
+        <li>Título do teste;</li>
+        <li>Descrição do teste, incluindo o objetivo do teste;</li>
+        <li>Etapas do teste – uma descrição passo-a-passo das ações a serem executadas pelos executores,
+          juntamente com os resultados esperados;</li>
+        <li>Critérios de aceitação – Resultado(s) esperados que deve(m) ser atendidos para que o
+          parâmetro específico desafiado seja considerado aprovado ou tenha passado no teste;</li>
+        <li>Etapas pré-testes – incluindo quaisquer pré-requisitos de testes ou preparação;</li>
+        <li>Dados a serem registrados – descrição dos dados a serem coletados e registrados;</li>
+        <li>Ações pós-testes – seção opcional que detalha as ações necessárias para retornar o sistema
+          ao estado original.</li>
+      </ul>
+    </p>
+
+    <h5>Resultados de Testes</h5>
+    <p>Os resultados dos testes devem estar disponíveis para subsequente revisão e inspeção. A
+      informação a ser retida deve incluir os testes que passaram, os que falharam, os registros de
+      falhas nos testes, os relatórios de testes e qualquer
+      documentação de evidência de realização dos testes tais como impressões, notas e fotos.</p>
+
+    <h5>Relatório de Testes e Relatório Resumido de Testes</h5>
+    <p>
+      Os relatórios de testes devem conter:
+      <ul>
+        <li>Introdução;</li>
+        <li>Escopo dos testes;</li>
+        <li>Organização dos testes;</li>
+        <li>Quem realizou e quem revisou os testes;</li>
+        <li>Resumo dos resultados dos testes de uma forma tabular;</li>
+        <li>Resumo das falhas nos testes;</li>
+        <li>Conclusões;</li>
+        <li>Para projetos grandes ou complexos que possuem múltiplos relatórios de testes as conclusões
+          gerais podem ser documentadas em um relatório resumido de testes.</li>
+      </ul>
+    </p>
+
+    <h4>Componentes da Estratégia de Testes</h4>
+    <p>
+      Os seguintes pontos devem ser levados em conta no desenvolvimento da estratégia de testes:
+      <ul>
+        <li>Políticas e procedimentos da empresa;</li>
+        <li>Resultados das avaliações de risco;</li>
+        <li>Resultados da avaliação de fornecedor;</li>
+        <li>Categorias de sistemas do GAMP;</li>
+        <li>Outros documentos, tais como: especificações dos requisitos; avaliação de risco inicial;
+          especificação funcional; especificação de configuração; documentos de projeto; resultados de
+          outras atividades realizadas nos diferentes estágios do desenvolvimento do <i>software</i>
+          e matriz de rastreabilidade.</li>
+      </ul>
+    </p>
+
+    <h4>Tipos de Testes</h4>
+    <p>
+      Existem basicamente dois tipos de atividades de testes:
+      <ul>
+        <li>Testes de Caixa Branca (<i>White Box Testing</i>) – também conhecidos como testes baseados
+          no código ou testes estruturais, onde os testes são identificados com base no código-fonte,
+          no conhecimento das especificações detalhadas do projeto e outros documentos do
+          desenvolvimento;</li>
+        <li>Testes de Caixa Preta (<i>Black Box Testing</i>) – testes realizados com base nas
+          especificações funcionais, desta forma conhecidos como testes funcionais.</li>
+      </ul>
+    </p>
+    <p>Os testes de caixa preta podem ser suficientes contanto que a avaliação do fornecedor tenha
+      encontrado evidência adequada da realização dos testes de caixa branca.</p>
+    <p>Tipos específicos de testes devem ser considerados, dependendo da complexidade e inovação do
+      sistema, do risco associado e da avaliação do fornecedor do sistema a ser testado, incluindo:
+      <ul>
+        <li>Testes de Caso Normal (Caso Positivo ou Testes de Capabilidade) – desafios da habilidade do
+          sistema para executar o que ele deveria executar, incluindo desencadeamento de mensagens de
+          erro e de alarme, de acordo com as especificações;</li>
+        <li>Testes de Casos Inválidos (Caso Negativo ou de Resistência) – desafios à habilidade do
+          sistema em não fazer o que não deveria fazer, de acordo com as especificações;</li>
+        <li>Testes de Repetibilidade – desafios à habilidade do sistema de fazer repetidamente o que
+          deveria fazer ou continuamente, se associado a algoritmos de controle em tempo real;</li>
+        <li>Teste de Desempenho – desafios à habilidade do sistema em fazer o que deveria fazer o mais
+          rápido e efetivamente possível, de acordo com as especificações;</li>
+        <li>Teste de Volume/Carga - desafios à habilidade do sistema em gerenciar altas cargas como
+          deveria fazer. Testes de volume/carga são necessários quando os recursos do sistema são
+          críticos;</li>
+        <li>Teste de Regressão - desafios à habilidade do sistema para:</li>
+        <ol>
+          <li>Manter as funcionalidades após ser modificado de acordo com requisitos especificados;</li>
+          <li>Assegurar que os módulos do software não envolvidos nas modificações não sejam afetados
+            adversamente.</li>
+        </ol>
+        <li>Testes de Estrutura/Caminho - desafios à estrutura interna do programa para desafiar as
+          rotinas/algoritmos, valores das variáveis, valores de retorno das funções etc.</li>
+      </ul>
+    </p>
+    <p>Os testes devem desafiar o sistema. Assim, por exemplo, se o sistema for concebido ou
+      pretendido para registrar os valores dos parâmetros monitorados ou controlados em um banco
+      de dados a uma frequência estabelecida (ex.: a cada segundo, minuto,
+      etc.), essa condição ou pior caso deve ser testada de forma a assegurar que os dados gerados
+      durante a rotina serão gravados corretamente.</p>
+
+    <h4>Ambientes de Testes</h4>
+    <p>
+      A estratégia de teste deve considerar e definir os ambientes necessários para a realização dos
+      testes. Para sistemas típicos da categoria 3 haverá somente um ambiente. Para sistemas mais
+      complexos, a realização dos testes pode ocorrer em
+      diferentes ambientes durante a fase de projeto, que podem incluir:
+      <ul>
+        <li>Ambiente de desenvolvimento, onde ocorre a produção do protótipo ou a programação;</li>
+        <li>Ambiente de teste, onde os testes formalmente são executados;</li>
+        <li>Ambiente operacional onde o sistema está instalado em seu ambiente-alvo.</li>
+      </ul>
+    </p>
+    <p>Os testes formais, à medida do possível, devem ser executados em ambiente operacional. Para
+      tal, os registros devem ser claramente distintos dos registros de produção ou os registros
+      de testes podem ser arquivados antes do início da operação. Os testes também poderão ser
+      executados em um ambiente de teste separado ou nos dois ambientes.</p>
+    <p>Os documentos de testes devem especificar que ambiente irá ser utilizado. Ao ser utilizado
+      um ambiente de teste, a estratégia de teste escolhida deve justificar a equivalência dos
+      resultados dos testes aos resultados que seriam obtidos no ambiente operacional.</p>
+    <p>Testes formais devem ser executados somente em ambientes sob gerenciamento da configuração.</p>
+
+
+    <h4>Testes de Aceitação</h4>
+    <p>Testes de aceitação são aqueles específicos realizados para atender algumas necessidades
+      contratuais. Estes testes usualmente formam parte de um grupo pré-definido de testes
+      funcionais realizados para demonstrar a adequação do sistema ao uso pretendido e atendimento
+      aos requisitos do usuário. Em tais situações, deve-se aproveitar resultados dos testes já
+      realizados, evitando assim duplicações de testes.</p>
+    <p>A aceitação pode ser realizada em duas etapas, Aceitação na Fábrica (<i>Factory</i>) ou da
+      Planta (<i>Site</i>), a saber:
+      <ul>
+        <li>Testes de Aceitação na Fábrica (<i>Factory Acceptance Tests</i> – FAT) – são executados
+          nas instalações do fornecedor antes de sua entrega, para mostrar que o sistema está
+          funcionando bem o suficiente para ser instalado e testado nas instalações do usuário;</li>
+        <li>Testes de Aceitação na Planta (<i>Site Acceptance Tests</i> – SAT) - são executados nas
+          instalações da empresa que adquiriu o sistema, para mostrar que o sistema está funcionando
+          no seu ambiente operacional e que sua interface com outros sistemas e periféricos e está
+          funcionando corretamente.</li>
+      </ul>
+    </p>
+    <p>Esta abordagem é frequentemente utilizada para equipamentos automatizados e sistemas de
+      controle.</p>
+    <p>O ambiente para a realização do teste de aceitação (teste ou operacional) deve ser definido.</p>
+
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

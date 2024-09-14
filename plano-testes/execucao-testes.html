@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Execucao dos Testes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../projeto/plano-testes.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>Execução dos Testes</h3>
+    <p>Todos os testes são executados de acordo com especificações e roteiros pré-definidos e
+      aprovados e mantidos sob controle de versão.</p>
+
+    <h4>Pré-requisitos</h4>
+    <p>
+      Os seguintes requisitos gerais devem ser atendidos antes de se iniciar a execução formal dos
+      testes:
+      <ul>
+        <li>Deve existir um gerenciamento de configuração formal antes de se iniciar a execução formal
+          dos testes. Todos os itens a serem testados (<i>Firmware/software/hardware</i>) que estão
+          dentro do escopo da fase de testes específica, devem ser considerados como linha de base e
+          estar sob controle de mudanças antes da execução dos testes;</li>
+        <li>Toda a documentação necessária deve estar disponível como descrita nas especificações
+          de testes;</li>
+        <li>Todos os pré-requisitos devem estar disponíveis;</li>
+        <li>Se houver necessidade de calibração de algum equipamento, isto deve ser efetuado e
+          documentado. O equipamento de calibração deve ser certificado, rastreável a padrões
+          nacionais e referenciado de acordo com os procedimentos dos clientes;</li>
+        <li>Todo o pessoal responsável pela execução dos testes, incluindo os usuários finais, deve
+          ser treinado nos procedimentos de teste e deve ser capaz de demonstrar confiança suficiente
+          para operação do sistema em teste. O treinamento deve ser documentado.</li>
+        <li>Todos os colaboradores envolvidos devem estar treinados nas Boas Práticas de Documentação.</li>
+      </ul>
+    </p>
+
+    <h4>Execução</h4>
+    <p>
+      Os testes devem ser executados da seguinte forma:
+      <ul>
+        <li>De acordo com uma especificação pré-definida e pré-aprovada.</li>
+        <li>Cada teste deve ser executado de acordo com o roteiro de teste e os resultados devem ser
+          registrados;</li>
+        <li>Cada teste deve ser executado por uma pessoa adequadamente treinada, inclusive nas Boas
+          Práticas de Documentação;</li>
+        <li>Os resultados dos testes devem ser documentados diretamente no momento de sua execução e
+          devem ser mantidos;</li>
+        <li>Todos os resultados de testes devem ser registrados imediatamente e com exatidão;</li>
+        <li>A identidade do executor do teste deve ser registrada;</li>
+        <li>Os registros de testes feitos manualmente devem ser legíveis. Anotações de forma abreviadas devem ser
+          evitadas e valores reais devem ser registrados sempre que possível;</li>
+        <li> O executor do teste deve decidir se o critério de aceitação é atendido e se o teste passou ou não. O
+          roteiro de teste deve declarar se o teste PASSOU ou FALHOU;</li>
+        <li>No caso de uma FALHA no teste, o executor deve decidir se continua a execução dos testes,
+          aborta os testes ou se refere à seção "Revisão de Testes", de acordo com
+          procedimentos de testes aprovados. Todos os testes que falharem devem ser registrados;</li>
+        <li>Os procedimentos de testes devem ser flexíveis o suficiente para permitir ao executor do
+          teste poder decidir se continua a realizar o teste quando encontrar situações tais como
+          quando constatado que o sistema funciona corretamente, mas o roteiro de teste está
+          incorreto;</li>
+        <li>Todos os testes que falharem devem ser rastreáveis durante a correção até o fechamento
+          final. As correções dos testes falhos podem requerer testes de regressão para se verificar
+          que as correções não introduziram novos problemas em outros módulos ou rotinas do
+          sistema.</li>
+      </ul>
+    </p>
+    <p>A execução dos testes deve ser auditada periodicamente, por amostragem, pela Unidade da
+      Qualidade da empresa.</p>
+
+    <h4>Documentação-Suporte dos Testes</h4>
+    <p>Documentação, tais como impressões, impressões de telas, anotações, fotos etc., são
+      necessárias para dar suporte aos resultados dos testes.</p>
+    <p>Sistemas mais complexos necessitam documentação-suporte mais extensiva do que sistemas mais
+      simples.</p>
+    <p>Documentação-suporte desnecessária, que não adiciona qualquer valor aos resultados dos
+      testes deve ser evitada.</p>
+
+    <h4>Revisão dos Testes</h4>
+    <p>
+      Após a conclusão da execução dos testes os resultados devem ser revistos para verificar:
+      <ul>
+        <li>Que todos os testes foram realizados;</li>
+        <li>A legibilidade, exatidão e completude dos testes;</li>
+        <li>Que todos os documentos relevantes foram incluídos e que a documentação está completa e
+          corretamente preenchida;</li>
+        <li>Que os critérios de aceitação foram cumpridos;</li>
+        <li>Que todos os registros de testes falhos foram incluídos;</li>
+        <li>Conformidade com os procedimentos.</li>
+      </ul>
+      <p>Alternativamente o executor dos testes pode solicitar uma revisão dos testes quando ocorrer
+        uma falha, de modo a se decidir quais ações serão tomadas e quais serão as próximas etapas.</p>
+      <p>As revisões devem ser realizadas e documentadas por uma pessoa diferente do executor do teste, tal como um
+        revisor de teste ou um grupo, ou o especialista no assunto.</p>
+
+      <p>Em caso de falhas nos testes, o revisor dos testes deve decidir que ação irá tomar e que tipo
+        de reteste será executado, se necessário. Estas decisões devem ser documentadas. Falhas nos
+        testes podem resultar de:
+        <ul>
+          <li>Erro no modo como o roteiro foi escrito. Ação corretiva: atualização do roteiro, seguida
+            da aprovação do roteiro de testes corrigido e considerar a necessidade da realização de
+            reteste;</li>
+          <li>Erro no modo como o requisito foi definido. Ação corretiva: atualização do requisito, com
+            possível execução de reteste e explanação no relatório de teste;</li>
+          <li>Erro no modo como o teste foi executado pelo testador. Ação corretiva: repetição do teste;</li>
+          <li>Erro do sistema. Ação corretiva: aplicação de um controle de mudança, envolvendo a correção
+            e repetição do teste.</li>
+        </ul>
+      </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

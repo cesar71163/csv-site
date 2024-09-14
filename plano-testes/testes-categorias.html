@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Testes Aplicados às Diferentes Categorias de Sistemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../projeto/plano-testes.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>Testes Aplicados às Diferentes Categorias de Sistemas</h3>
+    <p>Esta seção apresenta as considerações práticas para o planejamento dos testes a serem
+      realizados nos sistemas pertencentes às categorias 3, 4 e 5.</p>
+    <p>Para aqueles sistemas computadorizados em que há um equipamento é gerenciado
+      pela aplicação (<i>software</i>), há a necessidade de se realizar também a qualificação
+      deste equipamento, cuja metodologia é descrita em guias internacionais e legislações
+      específicas e não é escopo deste guia.</p>
+    <p>As atividades de IQ e OQ de <i>hardware/software</i> muitas vezes são realizadas pela empresa
+      fornecedora do <i>software</i>, mas tais atividades devem ter participação ativa na realização
+      e aprovação por parte da empresa regulada.</p>
+
+    <h4>Aspectos Aplicáveis a Todas as Categorias de Sistemas</h4>
+
+    <h5>Testes de Instalação de <i>Hardware/Software</i> (IQ)</h5>
+    <p>Muitas empresas denominam esta atividade de Qualificação de Instalação (IQ). O propósito é
+      verificar e documentar que os componentes do sistema estão instalados de acordo com as
+      especificações, documentação do fornecedor e requisitos locais e globais.</p>
+    <p> Deve ser evidenciada que a documentação do sistema está completa e que os requisitos
+      de instalação e de uso local e global estão de acordo as especificações.</p>
+    <p> Os testes de instalação fornecem uma linha de base de configuração para as subsequentes
+      atividades de verificação e validação, permitindo verificar os métodos de instalação, as
+      ferramentas de testes e/ou roteiros utilizados. Isto compõe a base
+      para o gerenciamento da configuração do sistema instalado.</p>
+    <p> Os testes de instalação devem verificar se os seguintes documentos estão disponíveis,
+      quando apropriado:
+      <ul>
+        <li>Guias técnicos e do usuário;</li>
+        <li>Procedimentos operacionais padrão;</li>
+        <li>Cronogramas de treinamento;</li>
+        <li>Acordos de Nível de Serviço;</li>
+        <li>Procedimentos de segurança;</li>
+        <li>Livros de registro;</li>
+        <li>Inventário do <i>hardware</i>;</li>
+        <li>Lista de instrumentos;</li>
+        <li>Folhas de especificações;</li>
+        <li>• Certificados e procedimentos de calibração;</li>
+        <li>Diagramas de tubulação/processo e instrumentação (P&ID);</li>
+        <li>Lista de equipamentos e folhas de especificações;</li>
+        <li>Inventário do <i>software</i> (incluindo procedimento de instalação, lista de
+          <i>software</i> do sistema, lista de <i>softwares</i> de aplicação, lista de dados,
+          configurações iniciais de dados para inicialização);</li>
+        <li>Código-fonte do programa (categoria 5);</li>
+        <li>Programa de manutenção preventiva;</li>
+        <li>Lista de peças de reposição críticas.</li>
+      </ul>
+    </p>
+
+    <h5>Testes de Operação de <i>Hardware/Software</i>(OQ)</h5>
+    <p>
+      Abaixo segue uma lista geral, aplicável a todos os sistemas. Deve ser utilizada para ajudar
+      na verificação do sistema instalado:
+      <ul>
+        <li>Teste de queda de energia (prevenção contra perda de dados críticos ou perda da ação de
+          controle; facilidade de reinicialização do controle);</li>
+        <li>Acesso ao sistema e recursos de sistema;</li>
+        <li>Trilhas de auditoria e registro de ações críticas, incluídas interações manuais;</li>
+        <li>Recursos de entrada manual de dados e validação da entrada;</li>
+        <li>Recursos de assinatura eletrônica;</li>
+        <li>Mensagens de erro e de alarme;</li>
+        <li>Cálculos críticos;</li>
+        <li>Transações críticas;</li>
+        <li>Transferência de dados críticos para outros pacotes ou sistemas para posterior
+          processamento;</li>
+        <li><i>Interfaces</i> e transferência de dados;</li>
+        <li><i>Backup</i> e restauração;</li>
+        <li>Arquivamento e recuperação de dados;</li>
+        <li>Habilidade em lidar com cargas de alto volume, particularmente se o sistema for acessado
+          por muitos usuários ou necessitar registrar muitos valores dos parâmetros
+          controlados/monitorados ao mesmo tempo, como parte de uma aplicação em rede, por exemplo.</li>
+      </ul>
+
+    </p>
+
+    <h4>Atividades de Testes para um Produto Não-Configurado</h4>
+    <p>Estes sistemas computadorizados são aqueles denominados de sistemas de “prateleira”
+      (<i>Off-the-shelf</i>), significando que não são configurados para um processo específico
+      de negócio ou são utilizados com a sua configuração padrão (<i>default</i>). São
+      classificados como categoria 3 do GAMP.</p>
+    <p>A empresa pode decidir por fazer uma avaliação do fornecedor para verificar a
+      qualidade do produto, dependendo do risco. Baseado no resultado satisfatório desta avaliação
+      e dos riscos envolvidos, uma abordagem simples consistindo em um nível apenas de
+      especificação e verificação pode ser aplicada.</p>
+    <p>Os testes devem ter como foco os seguintes pontos:
+      <ul>
+        <li>Aqueles relacionados à instalação do sistema, descritos no item "Testes de Instalação
+          de <i>Hardware/Software</i> (IQ)";</li>
+        <li>Testes dos Requisitos do Usuário que demonstrem a adequação ao uso pretendido, podendo
+          incluir a realização de testes de funcionalidade do sistema em comparação aos requisitos
+          pré-estabelecidos, dependendo do risco envolvido;</li>
+        <li>Os Testes dos Requisitos do Usuário devem também incluir a entrega e aceitação da
+          documentação completa enviada pelo fornecedor, incluindo especificações, manuais e desenhos,
+          se ainda não realizados;</li>
+        <li>Quaisquer testes posteriores ou mais rigorosos em função das avaliações de risco e do
+          fornecedor;</li>
+        <li>Quaisquer outros aspectos relevantes listados no item "Testes de Operação de
+          <i>Hardware/Software</i>(OQ)".</li>
+      </ul>
+    </p>
+
+    <h4>Atividades de Testes para um Produto Configurado</h4>
+    <p>Um produto configurado envolve a configuração de um software comercialmente disponível que
+      roda em componentes padrão de <i>hardware</i>. Estes sistemas que são configurados para um
+      processo de negócio específico são classificados como categoria 4 do GAMP.</p>
+    <p>Em tal situação, baseado no resultado satisfatório da avaliação do fornecedor e nos riscos
+      envolvidos, a estratégia de testes utilizando a abordagem de três níveis (configuração,
+      funcionalidade e requisitos) é a recomendada. A quantidade de documentos de testes
+      necessários para cobrir estes três níveis dependerá da complexidade e do impacto do
+      sistema.</p>
+    <p>Os testes devem ter como foco os seguintes pontos:
+      <ul>
+        <li>Aqueles relacionados à instalação do sistema, descritos acima no item "Testes de
+          Instalação de <i>Hardware/Software</i> (IQ)";</li>
+        <li>Testes de Configuração – para cada Especificação de Configuração deve existir uma
+          Especificação de Teste de Configuração associada. Os testes devem verificar se o
+          sistema foi instalado de acordo com as especificações. Os testes podem ser realizados por
+          meio de inspeção ou verificação da documentação do fornecedor;</li>
+        <li>Testes Funcionais – funcionalidade que dá suporte ao específico processo de negócio.
+          Nesta atividade a documentação do fornecedor pode ser aproveitada. Tipos possíveis de testes
+          funcionais: caso normal (positivo); caso inválido (negativo); repetibilidade; desempenho;
+          volume/carga; regressão; testes estruturais;</li>
+        <li>Testes dos Requisitos do Usuário que demonstrem a adequação ao uso pretendido, podendo
+          incluir a realização de testes de funcionalidade do sistema em comparação aos requisitos
+          pré-estabelecidos, dependendo do risco envolvido;</li>
+        <li>Os testes de requisitos devem também incluir a entrega e aceitação da documentação completa
+          enviada pelo fornecedor, incluindo especificações, manuais e desenhos, se ainda não
+          realizados;</li>
+        <li>Quaisquer testes posteriores ou mais rigorosos realizados como resultado das avaliações de
+          risco e do fornecedor;</li>
+        <li>Quaisquer outros aspectos relevantes listados no item "Testes de Operação de
+          <i>Hardware/Software</i>(OQ)".</li>
+      </ul>
+    </p>
+
+    <h4>Atividades de Testes para uma Aplicação Customizada</h4>
+    <p>Alguns sistemas computadorizados são desenvolvidos para atender requisitos específicos do
+      usuário, quando não existem soluções comercialmente disponíveis. Os <i>softwares</i>
+      desenvolvidos para tais sistemas são classificados como categoria 5 do GAMP.</p>
+    <p>Em tais casos e baseados na avaliação satisfatória do fornecedor e dos riscos envolvidos,
+      uma abordagem de testes baseada nos quatro níveis (projeto do módulo (unidade); integração;
+      funcionalidade e requisitos) é aplicável.</p>
+    <p>A quantidade de documentos de testes necessários para cobrir estes quatro níveis dependerá da
+      complexidade e impacto do sistema</p>
+    <p>Os testes devem ter como foco os seguintes pontos:
+      <ul>
+        <li>Aqueles relacionados à instalação do sistema, descritos no item "Testes de Instalação de
+          <i>Hardware/Software</i>(IQ)";</li>
+        <li>Revisão do novo código, requerida como resultado da avaliação de risco;</li>
+        <li>Testes dos módulos de <i>software</i> para verificar se estão de acordo com as suas
+          especificações de projeto – para cada Especificação de Projeto de Módulo de <i>Software</i>,
+          uma Especificação de Teste de Módulo de <i>Software</i> associada deve ser produzida.
+          Os testes de módulo de <i>software</i> a serem executados devem assegurar que o módulo de
+          <i>software</i> atende às especificações;</li>
+        <li> Testes de integração de <i>software</i> para testar se os módulos funcionam corretamente
+          quando operando em conjunto – a Especificação de Testes de Integração de <i>Software</i>
+          define aqueles testes que demonstram que todos os módulos de
+          <i>software</i> se comunicam entre si corretamente e que o <i>software</i>
+          atende à especificação de projeto. Uma Especificação de Teste de Integração de
+          <i>Software</i> deve ser produzida quando mais de um módulo de <i>software</i> compor o
+          sistema final;</li>
+        <li>Teste de configuração (se aplicável) – para cada Especificação de Configuração, uma
+          Especificação de Teste de Configuração associada deve ser produzida. Os testes devem
+          verificar se o sistema foi configurado de acordo com a especificação. Os testes podem tomar
+          a forma de inspeções ou verificação da documentação do fornecedor;</li>
+        <li>Testes Funcionais – funcionalidade que suporta o processo específico de negócio com base
+          nas avaliações de risco e do fornecedor (Esta é uma área na qual a documentação do
+          fornecedor pode ser aproveitada);</li>
+        <li>Testes dos Requisitos (<i>URS</i>) - demonstrar que o sistema é adequado para o uso
+          pretendido; isto pode incluir a realização de testes da funcionalidade do sistema contra
+          os requisitos pré-definidos, com base no risco;</li>
+        <li>Os testes dos requisitos devem também incluir a entrega e aceitação de toda a documentação
+          do fornecedor, incluindo especificações, manuais e desenhos, se ainda foi realizada esta
+          atividade;</li>
+        <li>Quaisquer testes posteriores ou mais rigorosos realizados como resultado das avaliações de
+          risco e do fornecedor;</li>
+        <li>Quaisquer outros aspectos relevantes listados no item "Testes de Operação de
+          <i>Hardware/Software</i> (OQ)".</li>
+      </ul>
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>
