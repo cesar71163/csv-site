@@ -1,0 +1,270 @@
+/* || General setup */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #262626;
+}
+
+/*  ----------------------------------------------------------------------------------------------------------------- */
+/* || header layout */
+.header {
+  display: block;
+  text-align: center;
+  height: auto;
+}
+
+
+/*  ----------------------------------------------------------------------------------------------------------------- */
+/*  nav layout */
+.nav {
+  background-color: gray;
+  height: 50px;
+}
+
+.nav ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+  height: 50px;
+}
+
+.nav li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: 100px;
+}
+
+.nav a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav span {
+  color: #262626;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav a:hover {
+  color: orange;
+}
+
+.nav li.threeline-icon {
+  display: none
+}
+
+
+/*  ----------------------------------------------------------------------------------------------*/
+/* main  layout */
+.main {
+  width: 100%;
+}
+
+.main div {
+  display: inline-block;
+  height: 650px;
+}
+
+.main blockquote {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #f27609;
+  line-height: 30px;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Source Code Pro', sans-serif;
+  color: silver;
+}
+
+
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 2rem;
+  color: silver;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+/*  ------------------------------------------------------------------------------------------------------------------*/
+/* article layout */
+.article {
+  margin-top: 0;
+  background-color: #0b2f5b;
+  text-align: center;
+  width: 69%;
+}
+
+.article p,
+input,
+li {
+  font-family: 'Source Code Pro', sans-serif;
+  color: white;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*  --------------------------------------------------------------------------------------------- */
+/* aside layout */
+.aside {
+  vertical-align: top;
+  width: 30.5%;
+  background-color: #024b46;
+}
+
+.aside ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  height: 50px;
+}
+
+.aside li {
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 50px;
+}
+
+.aside p {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  text-align: center;
+}
+
+.aside a {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.aside a:hover {
+  color: black;
+}
+
+/*  ----------------------------------------------------------------------------------- */
+footer {
+  background-color: rgba(208, 202, 203, 0.9);
+  padding: 5px;
+}
+
+footer p,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: #0e0e0e;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1000px) {
+
+.header {
+  display: flex;
+}
+
+  .header h1 {
+    width: 100%;
+    text-align: auto;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  .nav li.threeline-icon {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .nav li.threeline-icon:hover {
+     color: black;
+     cursor: pointer;
+  }
+
+  .main div {
+    display: block;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .article p,
+  li {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+  }
+
+  .aside {
+    padding: 0;
+  }
+
+  .aside p {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .footer p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .menujs {
+    height: auto;
+  }
+
+  .menujs ul {
+    height: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .menujs li {
+    display: block;
+    text-align: center;
+    border-bottom: solid black 1px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+}
