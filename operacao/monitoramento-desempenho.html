@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MONITORAMENTO DO DESEMPENHO DO SISTEMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../operacao.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>MONITORAMENTO DO DESEMPENHO DO SISTEMA</h2>
+    <h3>Introdução</h3>
+    <p>O impacto da falha do sistema computadorizado vai variar dependendo da sua criticidade. Quando apropriado, o
+      desempenho do sistema deve ser monitorado para que os problemas possam ser detectados de modo oportuno. Esta
+      atividade permite ao usuário se antecipar à ocorrência das falhas, por meio da utilização de ferramentas e
+      técnicas de monitoramento.</p>
+    <p>O monitoramento do desempenho faz parte de um programa de manutenção preventiva geral que tem por objetivo a
+      aquisição de dados de desempenho que são úteis para o diagnóstico de problemas do sistema. O monitoramento pode
+      indicar tendências que podem indicar problemas de desempenho e que podem ser utilizadas como parte das ações
+      corretivas e preventivas (CAPA) para reduzir o tempo de inatividade da aplicação ou sistema.</p>
+    <p>Os Planos de Monitoramento de Desempenho são específicos por sistema. Porém, pode ser prático desenvolver um
+      Procedimento Operacional Padrão sobre como preparar estes planos e desenvolver alguns parâmetros genéricos de
+      monitoramento.</p>
+    <p>O nível de detalhamento do plano de monitoramento vai depender do risco associado, da complexidade e da inovação
+      do sistema. Pode não ser necessário desenvolver planos de monitoramento para sistemas simples e de baixo risco,
+      podendo isto ser coberto por algum outro documento.</p>
+    <p>Os Planos de Monitoramento de Desempenho podem ser integrados aos Acordos de Nível de Serviço discutidos na seção
+      "Gerenciamento dos Servicos de Suporte", item "Introducao".</p>
+    <p>O monitoramento de desempenho pode ser um processo automático ou manual, ou mesmo a combinação de ambos.</p>
+    <p>Os registros de monitoramento de desempenho devem ser sujeitos à auditoria interna periódica.</p>
+
+    <h3>Requisitos-Chave</h3>
+    <p>A necessidade e a extensão das atividades de monitoramento devem ser baseadas no risco do sistema à segurança do
+      paciente, à qualidade do produto e à integridade dos dados.</p>
+    <p>Os parâmetros de desempenho apropriados devem ser definidos com base nos riscos identificados.</p>
+
+    <h3>Responsabilidades</h3>
+    <p>É de responsabilidade do dono do sistema assegurar que o desempenho do sistema seja monitorado e que as ações
+      apropriadas sejam tomadas quando necessário.</p>
+    <p>É de responsabilidade do dono do sistema informar ao dono do processo e à Unidade da Qualidade sobre quaisquer
+      problemas de desempenho que possam causar impacto na segurança do paciente, na qualidade do produto e na
+      integridade dos dados, devendo também invocar o Gerenciamento de Incidentes.</p>
+
+    <h3>Execução das Atividades</h3>
+    <p>
+      A atividade de monitoramento do desempenho envolve a realização das seguintes ações, nesta ordem:
+      <ul>
+        <li>Realizar a avaliação de risco;</li>
+        <li>Definir o plano de monitoramento;</li>
+        <li>Iniciar o monitoramento do desempenho do sistema, as atividades de controle de mudanças, o gerenciamento de
+          incidentes e de manutenção;</li>
+        <li>Realizar as revisões e avaliações periódicas como fonte de dados para a Revisão Periódica do sistema.</li>
+      </ul>
+    </p>
+
+    <h3>Parâmetros monitorados</h3>
+    <p>
+      Dependendo dos riscos às BPx das aplicações/sistemas instalados e o tipo do equipamento computadorizado envolvido,
+      as seguintes condições devem ser verificadas com ferramentas adequadas, a intervalos apropriados:
+      <ul>
+        <li>Servidores/estações de trabalho/PCs/sistemas de controle;</li>
+        <li>Utilização da CPU;</li>
+        <li>Utilização do cache;</li>
+        <li>Tempo de resposta interativa;</li>
+        <li>Número de transações por unidade de tempo;</li>
+        <li>Tempo de espera médio do trabalho;</li>
+        <li>Utilização da capacidade do disco;</li>
+        <li>Carga I/O (Entrada/Saída);</li>
+        <li>Mensagens de erro do sistema, incluindo falhas do sistema operacional e mensagens de aviso;</li>
+        <li>Situação do hardware;</li>
+        <li>Existência de trabalhos em lote críticos;</li>
+        <li>Existência de processos críticos;</li>
+        <li>Existência de processos críticos;</li>
+        <li>Disponibilidade de filas de impressoras;</li>
+        <li>Alarmes;</li>
+        <li>Redes;</li>
+        <li>Disponibilidade de componentes (servidor, roteador, etc.);</li>
+        <li>Carga de rede (ex.: número de colisões);</li>
+        <li>Transmissões;</li>
+        <li>Aplicações;</li>
+        <li>Monitoramento de mensagens de erro;</li>
+        <li>Tempos de resposta;</li>
+        <li>Número de usuários concorrentes;</li>
+        <li>Disponibilidade geral do sistema para os usuários.</li>
+      </ul>
+    </p>
+    <p><b style="color:red;">NOTA:</b> Os parâmetros citados acima são apenas exemplos e não uma lista completa.</p>
+
+    <h3>Mecanismos de Notificação</h3>
+    <p>
+      Dependendo do risco associado ao parâmetro monitorado, mecanismos tais como um ou mais descritos abaixo devem ser
+      utilizados para notificar os principais interessados sobre as condições de exceção ocorridas:
+      <ul>
+        <li>Mensagem no console do sistema;</li>
+        <li><i>E-mail</i> para o operador do sistema;</li>
+        <li><i>E-mail</i> para os prestadores de serviço externos;</li>
+        <li>Listas ou registros impressos;</li>
+        <li>Alarmes visuais ou sonoros.</li>
+      </ul>
+    </p>
+
+    <h3>Estrutura do Plano de Monitoramento</h3>
+    <p>
+      O plano de monitoramento deve cobrir as seguintes áreas:
+      <ul>
+        <li>Parâmetros monitorados;</li>
+        <li>Limites de alerta;</li>
+        <li>Frequência de observação;</li>
+        <li>Ferramenta de monitoramento;</li>
+        <li>Mecanismo de notificação e pessoa/sistema a ser informado;</li>
+        <li>Documentação dos resultados do monitoramento;</li>
+        <li>Período de armazenagem/retenção dos resultados;</li>
+      </ul>
+    </p>
+    <p>É recomendado utilizar um formato tabular para a documentação do plano.</p>
+
+
+    <h3>Revisão do Plano de Monitoramento</h3>
+    <p>
+      Os seguintes itens devem ser verificados durante a revisão do plano de monitoramento:
+      <ul>
+        <li>Se os parâmetros e componentes apropriados são monitorados;</li>
+        <li>Se os riscos determinados na análise de risco são abordados adequadamente;</li>
+        <li>Se os intervalos de tempo e os limites de alerta para os parâmetros monitorados são adequados;</li>
+        <li>Se os métodos de notificação são utilizados e permitem um alerta oportuno;</li>
+        <li>Se os resultados do monitoramento são retidos com segurança.</li>
+      </ul>
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

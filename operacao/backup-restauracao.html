@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BACKUP E RESTAURAÇÃO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../operacao.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2><i>BACKUP</i> E RESTAURAÇÃO</h2>
+
+    <h3>Introdução</h3>
+    <p><i>Backup</i> é o processo de copiar os registros, dados e <i>software</i> para protegê-los contra perda de
+      integridade ou disponibilidade do original. Restauração é a subsequente restauração de registros, dados ou
+      <i>software</i> quando requisitado/necessário.</p>
+    <p><i>Backup</i> e restauração não devem ser confundidos com arquivamento e recuperação.</p>
+
+    <h3>Requisitos-Chave</h3>
+    <p>Procedimentos devem ser estabelecidos para descrever e discriminar os <i>backup’s</i> de registros, dados e
+      <i>software</i>, realizados na rotina, para um local de armazenagem seguro e adequadamente separado do local de
+      armazenagem primário. A frequência da execução do procedimento de <i>backup</i> deve ser baseada em uma avaliação
+      de risco.</p>
+    <p>Devem existir procedimentos escritos para assegurar a restauração e a manutenção dos registros e dados relevantes
+      às BPF, no caso de ocorrência de falhas.</p>
+    <p>O procedimento de <i>backup</i>, instalações de armazenagem e mídia utilizada devem assegurar a integridade dos
+      dados. Deve haver um registro do <i>backup</i> realizado, com referências à mídia utilizada para a armazenagem.
+    </p>
+    <p>O meio de armazenamento utilizado deve ser documentado e justificado quanto a sua confiabilidade.</p>
+    <p>Os processos de <i>backup</i> devem ser verificados quando forem estabelecidos. Adicionalmente, deve haver
+      procedimentos e planos para execução regular de teste da capacidade de execução de <i>backup</i> e restauração.
+      Estas ações devem ser
+      documentadas.</p>
+
+    <h3>Responsabilidades</h3>
+    <p>
+      O dono do processo é o responsável pela:
+    <ul>
+      <li>Definição dos dados que necessitem de <i>backup</i>, devendo incluir os dados relevantes às BPF;</li>
+      <li>Definição da disponibilidade e requisitos de controle de acesso aos dados relevantes às BPF.</li>
+    </ul>
+    </p>
+    <p>O dono do sistema é o responsável por:
+    <ul>
+      <li>Assegurar que a organização do <i>backup</i> e da restauração do <i>software</i> para o sistema operacional
+        esteja definida atendam às regulações aplicáveis, de acordo com as diretrizes da Garantia da Qualidade, quando
+        aplicável;</li>
+      <li>Assegurar o adequado desempenho do <i>backup</i> e da restauração do software e dos dados para o sistema
+        operacional;</li>
+      <li>Assegurar os controles de acesso apropriados.</li>
+    </ul>
+    </p>
+
+    <h3>Processo de <i>Backup</i> e Restauração</h3>
+    <h4>Mídia de <i>Backup</i></h4>
+    <p>O <i>backup</i> deve ser realizado em mídia adequada e esta deve ser utilizada de acordo com a recomendação dos
+      fabricantes.</p>
+    <p>Na seleção e utilização da mídia de armazenagem devem ser considerados os seguintes pontos:
+    <ul>
+      <li>A expectativa média de sua vida útil;</li>
+      <li>As condições ambientais aceitáveis para sua armazenagem;</li>
+      <li>Requisitos para sua verificação, renovação e sobrescrição.</li>
+    </ul>
+    </p>
+    <p>Orientações sobre armazenagem, transporte e manutenção dos vários tipos de mídias, magnéticas e óticas,
+      utilizados na armazenagem de dados estão disponíveis, em geral, na documentação fornecida pelo fabricante do
+      produto.</p>
+
+    <h4><i>Backup</i> do Sistema Operacional</h4>
+    <p>Os <i>backups</i> de <i>software</i> são criados para assegurar que a última e correta versão do <i>software</i>
+      esteja disponível e possa ser restaurada em curto espaço de tempo e sem erro, em caso de falha ou após alterações
+      realizadas durante o desenvolvimento.</p>
+    <p>Todos os componentes de <i>software</i> necessários para o sistema operacional devem ser incluídos no escopo do
+      <i>backup</i> para assegurar que todo o sistema possa ser restaurado.</p>
+    <p>O processo de <i>backup</i> do <i>software</i> deve ser definido e documentado. Este <i>backup</i> pode ocorrer:
+    <ul>
+      <li>Após toda modificação do <i>software</i>, sendo que neste caso a realização do <i>backup</i> dos componentes
+        modificados do <i>software</i> pode ser suficiente. Devendo ser esta atividade documentada como parte do
+        controle de mudanças;</li>
+      <li>A intervalos regulares (ex.: anualmente) como <i>backup</i> completo, com base no risco e na natureza do
+        negócio.</li>
+    </ul>
+    </p>
+    <p>As cópias de <i>backup</i> devem ser armazenadas em local seguro.</p>
+    <p>A mídia de <i>backup</i> deve ser fisicamente segura e protegida de fogo, água e outros perigos. O processo de
+      armazenagem, padrões e acessos devem ser definidos e documentados.</p>
+    <p>Pelo menos duas gerações de cópias de backup devem ser armazenadas: a atual e a anterior à última alteração
+      realizada. Com base no risco, pode ser aconselhável manter mais gerações para evitar a possibilidade de propagação
+      de erros em todas as cópias de <i>backup</i> disponíveis.</p>
+    <p>Os seguintes dados devem ser claramente associados com a mídia de <i>backup</i>, seja no rótulo, seja em livro de
+      registro, de modo seguramente rastreável:
+    <ul>
+      <li>Data de criação;</li>
+      <li>Designação do sistema;</li>
+      <li>Designação do <i>software</i>;</li>
+      <li>Versão e/ou <i>software/firmware</i> número de construção (<i>build number</i>), se aplicável;</li>
+      <li>Número atual (geração e possível múltiplos backups);</li>
+      <li>Razão para o <i>backup</i> do <i>software</i>;</li>
+      <li>Data do <i>backup</i>;</li>
+      <li>Identidade da pessoa que realizou o <i>backup</i>.</li>
+    </ul>
+    </p>
+    <p><i>Backups</i> do <i>software</i> devem ser realizados enquanto o sistema estiver em operação. Registros dos
+      <i>backups</i> realizados devem ser mantidos. As instruções para realização de <i>backup</i> e restauração devem
+      ser armazenadas de modo seguro juntamente com a mídia de <i>backup</i>.</p>
+    <p>Com base no risco e no processo de <i>backup</i>, as operações de <i>backup</i> devem ser revisadas
+      periodicamente e a restauração do <i>backup</i> deve ser periodicamente executada para verificar se irá funcionar
+      corretamente quando necessário.</p>
+
+    <h4><i>Backup</i> dos Dados</h4>
+    <p>Dados eletrônicos relevantes às BPF devem ser mantidos de modo seguro pelo tempo de retenção definido. Enquanto
+      os dados são frequentemente mantidos em disco rígido utilizando-se conceitos de redundância ou discos espelhados,
+      <i>backups</i> adicionais de dados relevantes às BPF formam uma parte-chave para se evitar a perda de dados em
+      caso de falha do sistema. Os dados devem ser recuperáveis em curto espaço de tempo e sem erro e cópias mantidas
+      remotamente para se evitar perda devido a alguma falha comum em um local (ex.: fogo). O tipo e a frequência de
+      execução do <i>backup</i> devem ser baseados no risco.</p>
+    <p>Os dados devem ser periodicamente salvos na mídia de <i>backup</i>. O dono do sistema deve estabelecer e
+      documentar a organização dos <i>backups</i> de dados, cobrindo os seguintes aspectos:
+    <ul>
+      <li>Tipos de <i>backup</i> (completo ou incremental);</li>
+      <li>Intervalo: diário, semanal, mensal, trimestral, anual ou não cíclico (retenção permanente);</li><br>
+      <li>Número de gerações. O número de gerações define o número de <i>backups</i> identicamente realizados que são
+        mantidos. Visto que as mídias de <i>backup</i> são frequentemente reutilizadas, após o número de gerações ser
+        atingido, os
+        <i>backups</i> subsequentes
+        serão sobrescritos sobre o <i>backup</i> mais velho. Por exemplo: se o número de gerações definido for quatro,
+        o quinto <i>backup</i> irá sobrescrever o primeiro, o sexto irá sobrescrever o segundo e assim por diante;
+      </li>
+      <li>Falha do <i>backup</i> – Ações a serem realizadas em caso de falha do backup devem ser estabelecidas, tais
+        como a repetição do <i>backup</i> durante o dia. As ações executadas em caso de falhas devem ser documentadas
+        (ex.: livro de
+        registro)
+        pela pessoa
+        responsável pelo sistema computadorizado;</li>
+      <li>Rotulagem da Mídia de <i>Backup</i>. Os seguintes itens devem constar no rótulo da mídia, ou registrado em
+        livro de registros: designação do sistema; designação do <i>software</i>/dados; versão e/ou número de
+        construção do <i>software/firmware</i> (se aplicável);
+        data de criação; data do primeiro uso; número atual (gerações, possíveis múltiplos <i>backups</i>); data do
+        <i>backup</i>; razão para o <i>backup</i> e identidade do operador;</li>
+      <li>Duração de utilização. A mídia deve ser somente utilizada pelo tempo que tem garantia;</li>
+      <li>O tipo de mídia utilizada deve ser documentado;</li>
+      <li>Local de Armazenagem. Os locais de armazenagem devem ser seguros e adequadamente identificados e
+        rastreáveis;</li>
+      <li>Ferramentas de <i>Backup</i> de Dados e Procedimentos Correspondentes. Dados relevantes às BPF devem ser
+        armazenados de forma adequada que permita sua restauração. A localização e o nome do procedimento de controle
+        devem ser documentados.
+        Os procedimentos devem cobrir a restauração, as atividades de verificação e reinicialização após falha do
+        sistema;</li>
+      <li>Revisão do <i>Backup</i> de dados. O dono do processo, ou pessoa delegada, é responsável por assegurar a
+        bem-sucedida realização do <i>backup</i>. Falhas devem ser investigadas e mídias de armazenagem com defeitos
+        potenciais devem ser
+        descartadas e
+        substituídas. As ações devem ser documentadas em livro de registros.</li>
+    </ul>
+    </p>
+
+    <h4>Restauração</h4>
+    <p>Procedimentos escritos e testados devem ser utilizados para execução da restauração. Quando a restauração for
+      realizada manualmente, isto deve ser registrado e assinado.</p>
+    <p>O dono do processo, ou pessoa delegada, deve autorizar a restauração de dados. Estas pessoas são os responsáveis
+      por assegurar que o procedimento de restauração esteja em conformidade com as regulações de Boas Práticas.</p>
+    <p>Se a restauração for motivada por razões técnicas, o dono do processo e o dono do sistema devem fazer uma
+      avaliação sobre o processo e os possíveis riscos. O método de restauração utilizado e o controle da operação de
+      restauração devem ser
+      documentados.</p>
+
+    <h4>Integridade por Longo Período</h4>
+    <p>As mídias de armazenagem eletrônicos se degradam com o passar do tempo, portanto, a reutilização da mídia deve
+      ser realizada de acordo com as orientações do fabricante com relação à sua vida útil.</p>
+    <p>No caso improvável de que uma cópia de <i>backup</i> seja mantida por um período que se aproxima do fim de vida
+      útil da mídia, a integridade dos <i>backups</i> contidos na mídia deve ser revisada de acordo com as
+      especificações do fabricante. É preferível copiar os dados em uma mídia nova a revisar a mídia antiga.</p>
+    <p>Os procedimentos de <i>backup</i> e de restauração devem ser verificados periodicamente. A frequência deve ser
+      baseada no risco. Esta verificação pode ser realizada por mídia, da restauração do <i>backup</i> para um sistema
+      de teste e verificando-se a sua correta operação.</p>
+    <p>Uma abordagem comum e pragmática consiste em combinar a verificação do processo de <i>backup</i> com o teste de
+      recuperação de desastre. A restauração do <i>backup</i> para o sistema rodando em produção, com o propósito de se
+      realizar um teste, não é recomendável, pois um erro no procedimento pode resultar em perda de dados.</p>
+    <p>Os procedimentos de <i>backup</i> e restauração devem ser verificados durante a revisão periódica do sistema. As
+      conclusões devem ser documentadas.</p>
+
+    <h3>Execução das Atividades</h3>
+    <p>
+      As atividades de <i>backup</i> e restauração envolvem a realização das seguintes ações:
+    <ol>
+      <li>Avaliação de risco, levando-se em conta a probabilidade e risco de ocorrência de danos;</li>
+      <li>Definição da estratégia para a realização das operações de <i>backup</i>, abrangendo: frequência, local de
+        armazenagem, tempos de respostas necessários, período de retenção e mídia de armazenagem;</li>
+      <li>Desenvolvimento dos procedimentos escritos de <i>backup</i> e de restauração, abrangendo: responsabilidades,
+        treinamento e documentação;</li>
+      <li>Definição dos procedimentos e planos de testes para verificação das operações de <i>backup</i> e de
+        restauração;</li>
+      <li>Execução dos testes, documentando os resultados e as ações tomadas;</li>
+      <li>Execucao das operacoes de <i>backup</i> de acordo com procedimento estabelecido;</li>
+      <li>Monitoramento do sistema durante sua vida operacional.</li>
+    </ol>
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>
