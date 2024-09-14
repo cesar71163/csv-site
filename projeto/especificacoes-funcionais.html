@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOCUMENTO CONTENDO AS ESPECIFICAÇÕES FUNCIONAIS (EF/FS)</title>
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ <div id="nav" class="nav">
+    <ul>
+      <li><a href="projeto.html">Voltar</a></li>
+      <li><a href="index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>DOCUMENTO CONTENDO AS ESPECIFICAÇÕES FUNCIONAIS (EF/FS)</h2>
+
+    <h3>Introdução</h3>
+    <p>As especificações funcionais (EF/FS) definem o sistema que atende às necessidades do usuário,
+      descritas nas especificações dos requisitos dos usuários (ERU/URS).</p>
+    <p> Para alguns sistemas, como aqueles comercialmente disponíveis e de baixo risco, pertencentes à categoria 3, uma abordagem simples consistindo em um nível simples de especificação e verificação é apropriada e um documento contendo as
+    <p> especificações funcionais não é necessário.</p>
+    <p> Um documento de Especificações Funcionais define o que o sistema deve fazer e que funções e
+      instalações serão fornecidas. Ele fornece uma lista de objetivos de projeto para o sistema.
+      Os testes formais serão baseados nas especificações funcionais.</p>
+    <p> O documento contendo as especificações funcionais é produzido pelo fornecedor e deve ser
+      revisado e aprovado pela empresa regulada. É frequentemente considerado um documento
+      contratual.</p>
+    <p> As seguintes diretrizes devem ser seguidas durante a produção da especificação:
+    <ul>
+      <li>Todas as restrições de projeto devem ser explicitamente documentadas(ex.: as limitações
+        externamente definidas que um sistema deve atender, tais como plataforma de
+        <i>hardware/software</i>, velocidade, potência, teste, condições ambientais e operacionais);</li>
+      <li>Ambiguidade, duplicação e contradição devem ser evitadas;</li>
+      <li>Convenções consistentes de nomenclatura devem ser adotadas;</li>
+      <li>Cada função e instalação descrita devem ser testáveis;</li>
+      <li><i>Interfaces</i> internas e externas devem ser claramente definidas;</li>
+      <li>As especificações funcionais devem ser claras o suficiente para permitir que o projeto
+        prossiga sem haver necessidade frequente de consulta ao autor destas especificações:</li>
+      <ul>
+        <li>Tanto os usuários quanto os programadores devem entender as especificações funcionais;</li>
+        <li>O uso de diagramas e gráficos é recomendado quando apropriado.</li>
+      </ul>
+    </ul>
+    </p>
+    <p>As especificações funcionais devem ser preparadas e organizadas de modo que permita a
+      rastreabilidade por todo o ciclo de vida, desde os requisitos individuais até os testes
+      associados.</p>
+
+    <h3>Conteúdo do Documento de EF/FS</h3>
+    <p>
+      A relacao de tópicos que podem fazer parte do documento de EF/FS, não e prescritiva nem exaustiva.
+    </p>
+
+    <h4>Introdução</h4>
+    <p>
+      As seguintes informações devem ser fornecidas:
+    <ul>
+      <li>Propriedade do documento;</li>
+      <li>Quem produziu o documento, sob que autoridade e para que propósito;</li>
+      <li>A situação contratual do documento (se aplicável);</li>
+      <li>Relacionamento com outros documentos (ex.: ERU/URS).</li>
+    </ul>
+    </p>
+    <h4>Visão Geral</h4>
+    <p>
+      Deve cobrir os seguintes tópicos, quando apropriado:
+    <ul>
+      <li>Escopo e objetivos;</li>
+      <li>Referência aos regulamentos de BPF relevantes;</li>
+      <li>Impacto na segurança do paciente, qualidade do produto e integridade dos dados;</li>
+      <li>Descrição em alto nível (realizar uma subdivisão em componentes primários do sistema);</li>
+      <li>As principais <i>nterfaces</i> entre o sistema e outros sistemas e/ou o ambiente;</li>
+      <li>Premissas/restrições;</li>
+      <li>Não conformidades em relação às especificações dos requisitos dos usuários, devendo ser
+        documentadas e justificadas.</li>
+    </ul>
+    </p>
+
+    <h4>Funções</h4>
+    <p>A descrição em alto nível deve ser dividida ao nível das funções individuais.</p>
+    <p>Os seguintes aspectos devem ser abordados, quando apropriado:
+    <ul>
+      <li>O objetivo da função e os detalhes de sua utilização, incluindo <i>nterface</i> com outras partes
+        do sistema. Entradas, saídas, cálculos críticos, algoritmos e o impacto em outras funções
+        e/ou sistemas e /ou ambiente devem ser destacadas;</li>
+      <li>Desempenho: resposta, dimensionamento, processamento centralizado ou distribuído e taxa de
+        transferência – Estes pontos devem se quantitativos e inequívocos;</li>
+      <li>Segurança e proteção – Ação em caso do <i>software</i> ou <i>hardware</i> selecionado
+        falhar, tais como, auto verificação, verificação de valor de entrada, redundância, restrições
+        de acesso, tempos fora de ar e recuperação de dados;</li>
+      <li>Funções que são configuráveis e quaisquer limites para configuração;</li>
+      <li>Rastreabilidade aos requisitos específicos do ERU/URS;</li>
+      <li>Condições de falhas, ações de falhas, arquivos de registros e diagnósticos.</li>
+    </ul>
+    </p>
+    <h4>Dados</h4>
+    <p>
+      Os seguintes aspectos devem ser abordados, quando apropriado:
+    <ul>
+      <li>Definição – os dados devem ser definidos de um modo hierárquico, com os objetos complexos
+        sendo construídos de objetos mais simples (ex.: arquivos de registros). Os parâmetros críticos devem ser destacados;</li>
+      <li>Acesso;</li>
+      <li>Intervalo permitido para os valores de entrada e de saída;</li>
+      <li>Campos necessários;</li>
+      <li>Verificação da validação dos dados;</li>
+      <li>Relacionamento dos dados;</li>
+      <li>Capacidade de armazenamento de dados, tempo de retenção e detalhes sobre arquivamento dos
+        dados;</li>
+      <li>Integridade e proteção dos dados;</li>
+      <li>Migração dos dados (importação e exportação).</li>
+    </ul>
+    </p>
+
+    <h4><i>Interfaces</i></h4>
+    <p>
+      As <i>nterfaces</i> entre sistemas devem ser descritas, definindo como os sistemas e os
+      subsistemas interagem, o que elas provêm e o que elas necessitam. Para sistemas regulados pelas BPx, a proteção das <i>nterfaces</i> é importante. Os seguintes pontos devem ser abordados
+      quando apropriado:
+    <ul>
+      <li><i>Interfaces</i> com os usuários. Isto deve ser definido em papéis (perfil de acesso),
+        tais como, operador, administrador, gerente do sistema etc.Tópicos a serem considerados: tipos de periféricos, formato geral de telas e relatórios, tratamento e relatórios de erros e segurança. Modo(s) de entrada do usuário deve(m) ser
+        definido(s), tais como, teclado e
+        mouse, touchscreen, caligrafia via caneta;</li>
+      <li><i>Interfaces</i> com equipamentos, tais como sensores e equipamento da planta;</li>
+      <li><i>Interfaces</i> com outros sistemas. Isto deve cobrir a natureza e tempo de interação e
+        os métodos e regras que governam a interação entre os sistemas. Se houver alguma restrição de <i>middleware</i>, isto deve ser registrado.</li>
+    </ul>
+    </p>
+    <p>Os seguintes tópicos devem ser considerados para qualquer tipo de interface:
+    <ul>
+      <li>Dados transmitidos e recebidos;</li>
+      <li>Tipo de dados, formato, intervalos e significado dos valores;</li>
+      <li>Tempo;</li>
+      <li>Taxas de transferência de dados;</li>
+      <li>Protocolos de comunicação: iniciação e ordem de execução;</li>
+      <li>Quaisquer compartilhamentos de dados, criação, duplicação, uso, armazenagem ou destruição;</li>
+      <li>Mecanismos para iniciação e interrupção;</li>
+      <li>Comunicação por meio de parâmetros, áreas de dados comuns ou mensagens;</li>
+      <li>Acesso direto aos dados internos;</li>
+      <li>Tratamento de erros, recuperação e relatório;</li>
+      <li>Acesso e segurança.</li>
+    </ul>
+    </p>
+    <h4>Atributos Não-Funcionais</h4>
+    <p>
+      O modo como o sistema irá atender aos requisitos não-funcionais devem ser descritos. Os
+      seguintes itens devem ser abordados quando apropriado:
+    <ul>
+      <li>Disponibilidade (confiabilidade, redundância, verificação de erro, operação em
+        <i>stand-by</i>);</li>
+      <li>Manutenção (possibilidades de expansão e aprimoramento; capacidade extra; mudanças prováveis
+        no ambiente e vida útil).</li>
+    </ul>
+    </p>
+    <h4>Ambiente</h4>
+    <p>
+      Quaisquer requisitos especiais lógicos ou físicos, tais como encriptação ou proteção física
+      (acesso controlado), devem ser avaliados.
+    </p>
+    <h4>Glossário</h4>
+    <p>
+      Definições de quaisquer termos pouco conhecidos devem ser fornecidas.
+    </p>
+
+    <h4>Apêndices</h4>
+    <p>
+      Quando apropriado, por exemplo, para pequenos sistemas, apêndices devem ser fornecidos para
+      definição das especificações de <i>hardware</i> e <i>software</i>.
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

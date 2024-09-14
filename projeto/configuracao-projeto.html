@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOCUMENTO CONTENDO A CONFIGURAÇÃO E O PROJETO</title>
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div  id="nav" class="nav">
+    <ul>
+      <li><a href="../projeto.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+
+    <h2>DOCUMENTO CONTENDO A CONFIGURAÇÃO E O PROJETO</h2>
+
+    <h3>Introdução</h3>
+    <p>
+      Esta seção aborda sobre como definir a configuração necessária dos componentes do sistema e do
+      projeto do sistema.
+    </p>
+    <p>Dependendo do tipo de sistema (configurável ou customizado), as especificações de configuração
+      e de projeto fornecem uma expansão técnica detalhada das especificações funcionais. Definem
+      os recursos e flexibilidade do sistema, as propriedades e as suas especificações. As
+      informações geradas formam a base para subsequente atividade de gerenciamento da
+      configuração.</p>
+    <p>Não há necessidade de preparação de documentos separados para definição da configuração e do
+      projeto. Uma hierarquia de especificações pode ser necessária para sistemas maiores e mais
+      complexos, já para sistemas menores mais simples ou considerados de baixo risco as
+      especificações podem ser combinadas.</p>
+
+
+    <h3>Visão Geral</h3>
+
+    <h4>Configuração</h4>
+    <p>Para produtos configuráveis devem ser preparadas especificações de configuração que compõem o
+      sistema para que este atenda aos requisitos do usuário. Isto inclui a definição de todas as
+      configurações e parâmetros.</p>
+    <p>Estas especificações de configuração são produzidas pelo fornecedor do sistema e revisadas e
+      aprovadas pela <empresa></empresa>.</p>
+    <p>É possível manter este conjunto de especificações de configuração em sistemas que possuem
+      gerenciamento de configuração robusto (<i>audit trails</i> detalhados e completos). Tal
+      abordagem deve ser bem documentada.</p>
+
+    <h4>Projeto (<i>Design</i>)</h4>
+    <p>Para aplicações customizadas deve ser preparado um documento contendo o projeto do
+      <i>hardware</i> e do <i>software</i>. Assim pode ser necessário preparar um documento contendo
+      as especificações de configuração.</p>
+    <p>O projeto de <i>hardware</i> define os componentes de <i>hardware</i> que compõem o sistema,
+      como por exemplo, arquitetura do componente ou do sistema, ou interfaces.</p>
+    <p>O projeto de <i>software</i> possui dois níveis. No nível mais alto ele define os módulos do
+      <i>software</i> (subsistemas) que irão formar o <i>software</i> do sistema completo, as
+      <i>interfaces</i> entre estes módulos e as <i>nterfaces</i> entre outros sistemas externos.
+      No nível mais baixo, o projeto de <i>software</i> descreve a operação dos <i>softwares</i>
+      dos módulos individuais. Estas especificações devem ser inequívocas, claras e precisas.</p>
+    <p>As especificações de projeto são produzidas pelo fornecedor do sistema e revisadas e aprovadas
+      pela empresa.</p>
+    <p>A empresa regulada deverá possuir uma abordagem unificada para a realização da especificação
+      e verificação da infraestrutura que suporta os seus projetos de sistemas e tal atividade não
+      deverá ser repetida para cada sistema.</p>
+
+    <h3>Considerações Gerais</h3>
+    <p>A utilização de tabelas e diagramas para ilustrar as Especificações de Configuração e de
+      Projeto é altamente recomendada. Tabelas padronizadas podem ajudar a assegurar que todos os
+      parâmetros e configurações foram definidos. Diagramas podem ajudar dentro do projeto de <i>software</i> a
+      esclarecer e explicar o fluxo de dados, o controle lógico, as estruturas de dados e as <i>nterfaces</i>. Diagramas
+      no projeto de
+      <i>hardware</i>
+      podem ajudar a entender sobre a arquitetura e a conectividade.</p>
+    <p>Configuração e Projeto devem cobrir tanto os aspectos de <i>hardware</i> quanto de
+      <i>software</i>. Dependendo do risco, tamanho e complexidade do sistema estes pontos podem ser
+      cobertos por uma especificação simples ou podem demandar uma hierarquia de especificações
+      abrangendo <i>hardware</i> e <i>software</i> separadamente. Cada especificação deve ser
+      referenciada de modo individual e ser rastreável à especificação de alto nível associada.</p>
+    <p>Todas as especificações devem ser estruturadas de modo a apoiar a rastreabilidade por todo o ciclo de vida a
+      partir do requerimento individual até o teste associado a este requerimento.</p>
+
+    <h3>Conteúdo do Documento</h3>
+    <p>As seções descritas abaixo não pretendem ser prescritivos nem exaustivos. O nível de seu
+      detalhamento depende do risco, da complexidade e da inovação do sistema. Podem fazer parte de
+      um documento simples ou de uma hierarquia de documentos.</p>
+
+    <h4>Introdução</h4>
+    <p>
+      Deve conter os seguintes itens:
+      <ul>
+        <li>Propriedade do documento contendo a configuração e o projeto;</li>
+        <li>Quem produziu o documento, sob que autoridade e para que propósito;</li>
+        <li>A situação contratual do documento (Se aplicável);</li>
+        <li>O relacionamento com outros documentos (ERU/URS; EF/FS; outras especificações de
+          configuração e de projeto etc.).</li>
+      </ul>
+    </p>
+
+    <h4>Visão Geral</h4>
+    <p>
+      Esta seção deve descrever brevemente a configuração e/ou projeto. Dependendo da complexidade do
+      sistema, isto pode cobrir o sistema completo, o hardware e/ou software. Esta seção pode ser
+      ilustrada utilizando-se diagramas.
+    </p>
+
+    <h4>Configuração</h4>
+    <p>
+      A configuração necessária dos componentes deve ser fornecida, incluindo, mas não limitada a:
+      <ul>
+        <li>Configurações, ou parâmetros de configuração, necessários;</li>
+        <li>Razão para configuração, com referência à especificação de controle;</li>
+        <li>Ferramentas ou métodos que serão utilizados para definir as opções necessárias de
+          configuração;</li>
+        <li>Dependências ou impactos de/em outros módulos ou sistemas</li>
+        <li>Itens de infraestrutura tais como sistemas operacionais ou software em camadas;</li>
+        <li>Segurança das configurações.</li>
+      </ul>
+    </p>
+    <p>Para sistemas pequenos pode ser possível incorporar estas informações dentro do documento de
+      Especificações Funcionais.</p>
+
+    <h4>Projeto do <i>Hardware</i></h4>
+
+    <h5>O Sistema Computadorizado</h5>
+    <p>
+      A arquitetura geral do hardware necessário deve ser definida. Em um alto nível isto pode ser
+      ilustrado por diagrama de blocos, apresentando tanto as funções das partes quanto seus
+      relacionamentos funcionais. Os seguintes itens devem ser cobertos, quando apropriado:
+      <ul>
+        <li>Sistema do computador principal – Deve descrever os componentes primários de hardware do
+          sistema computadorizado principal, tais como, unidade de processamento central (CPU), memória,
+          tipo de bus; exatidão do relógio etc.;</li>
+        <li>Armazenagem – Descrever todos os dispositivos de memória propostos com suas respectivas
+          capacidades máximas de armazenagem, tais como, hard disk; CD writer, fitas etc.;</li>
+        <li>Periféricos – Deve descrever os dispositivos periféricos necessários, incluindo quaisquer
+          requisitos específicos para sua instalação;</li>
+        <li>Interconexões/redes – Deve descrever todas interconexões dos componentes de hardware e
+          quaisquer conexões com outros equipamentos, dispositivos e sistemas computadorizados. Esta
+          descrição pode conter os seguintes itens: especificações dos cabos; especificações dos
+          conectores; requisitos de blindagem; redes ou outras conexões externas etc.;</li>
+        <li>Configuração;</li>
+        <li>Sistemas embutidos (dentro do equipamento de processo) – Deve incluir os seguintes
+          elementos: diagramas de layout para detalhamento do painel de controle e arranjos internos e
+          externos; diagramas de localização para indicar onde os sensores e outros dispositivos estão
+          instalados no equipamento; diagramas da fiação elétrica e desenhos da tubulação/processo e
+          diagrama de instrumentação (P&ID);</li>
+        <li>Referência aos padrões/normas relevantes.</li>
+      </ul>
+    </p>
+
+    <h5>Entradas e Saídas</h5>
+    <p>
+      Os formatos das entradas e saídas devem, quando necessários serem especificados. Estes podem
+      incluir os sinais digitais e/ou analógicos.
+      Para os equipamentos externos os seguintes elementos devem ser considerados:
+      <ul>
+        <li>Exatidão;</li>
+        <li>Isolamento;</li>
+        <li>Faixa de corrente e voltagem;</li>
+        <li>Tipos e número de cartões de <i>nterface</i>;</li>
+        <li>Tempo.</li>
+      </ul>
+    </p>
+
+    <h5>Ambiente</h5>
+    <p>
+      O ambiente operacional para o <i>hardware</i> deve ser definido. Os seguintes tópicos devem ser considerados:
+      <ul>
+        <li>Temperatura;</li>
+        <li>Umidade;</li>
+        <li>Interferência externa;</li>
+        <li>Segurança física;</li>
+        <li>Blindagem contra interferência de radiofrequência, eletromagnética e/ou UV;</li>
+        <li>Proteção contra danos físicos tais como poeira ou vibração.</li>
+      </ul>
+
+    </p>
+
+    <h5>Fornecimento de Energia</h5>
+    <p>
+      Os requisitos para fornecimento de energia para o <i>hardware</i> configurado devem ser
+      descritos. Os seguintes elementos devem ser considerados:
+      <ul>
+        <li>Filtragem;</li>
+        <li>Carregamento;</li>
+        <li>Aterramento;</li>
+        <li> Estabilidade;</li>
+        <li>Fontes de alimentação ininterruptas (UPS);</li>
+        <li>Consumo de energia e/ou emissão de calor para calcular a capacidade necessária de ar
+          condicionado ou de sistema de aquecimento, ventilação e ar condicionado (HVAC).</li>
+      </ul>
+    </p>
+
+    <h4>Projeto do <i>Software</i></h4>
+    <p>O <i>software</i> deve ser projetado de acordo com padrões reconhecidos para desenvolvimento de <i>software</i>,
+      quando apropriado.</p>
+    <p>Especificações de projeto de <i>software</i> são requeridos para aplicações customizadas. Estas especificações
+      não são requeridas para sistemas configuráveis, pois neste caso o projeto de <i>software</i> é revisado ou
+      avaliado como parte da
+      avaliação do fornecedor do sistema
+      computadorizado.</p>
+
+    <h5>Descrição do <i>Software</i></h5>
+    <p>Os módulos que formarão o sistema computadorizado devem ser descritos, declarando-se brevemente o propósito de
+      cada módulo. Uma lista discriminando todas as interfaces existentes entre os módulos e quaisquer interfaces com
+      sistemas externos
+      deve ser apresentada. Um diagrama do sistema é recomendado.</p>
+
+    <h5>Dados do Sistema</h5>
+    <p>
+      Os dados do sistema e os objetos de dados relevantes devem ser definidos. Os dados devem ser
+      caracterizados de um modo hierárquico, sendo os objetos complexos construídos a partir de
+      objetos mais simples.
+      Os objetos podem incluir os seguintes itens:
+      <ul>
+        <li>Bancos de dados e coleções de arquivos;</li>
+        <li>Arquivos;</li>
+        <li>Registros.</li>
+      </ul>
+      <p>Uma descrição dos objetos de dados inclui, dentre outros:
+        <ul>
+          <li>Tipos de dados (inteiros, números de pontos flutuantes, caracteres, booleanos, cadeia de
+            caracteres (string), objetos (imagens e documentos), etc.);</li>
+          <li>Formato de dados (alfanumérico ou numérico, comprimento do campo, datas, etc.);</li>
+          <li>Precisão dos dados;</li>
+          <li>Exatidão de dados.</li>
+        </ul>
+      </p>
+      <p>Cada arquivo e estrutura de dados deve ser unicamente identificado. A utilização de métodos de descrição de
+        formatos de dados tais como “Modelo de Relacionamento de Entidade” ou similar
+        pode ser considerado.</p>
+      <p>É aceitável que os dados de sistemas sejam definidos separadamente como em um dicionário. Se
+        isto for feito deste modo, esta abordagem deve ser claramente explicada e documentada.</p>
+    </p>
+
+    <h5>Descrição do Módulo</h5>
+    <p>
+      Para cada módulo, os seguintes pontos devem ser abrangidos:
+      <ul>
+        <li>Operação do módulo: a descrição pode tomar a forma de um pseudocódigo ou fluxograma;</li>
+        <li><i>Interfaces</i> com outros módulos: este ponto pode referenciar ao diagrama do sistema,
+          se houver um;</li>
+        <li>Tratamento de erros e verificação de dados;</li>
+        <li>Mapeamento de dados de cada módulo;</li>
+        <li>Dados do módulo do <i>software</i>.</li>
+      </ul>
+    </p>
+    <p>Para cada subprograma do módulo do <i>software</i>, os seguintes pontos devem ser cobertos:
+      <ul>
+        <li>Operação do subprograma: a descrição pode tomar a forma de um pseudocódigo;</li>
+        <li>As etapas envolvidas em cada processo a ser executado e as entradas e saídas de cada etapa;</li>
+        <li>Parâmetros: cada parâmetro deve ser identificado como um dos exemplos abaixo:</li>
+        <li>Parâmetro de entrada;</li>
+        <li>Parâmetro de saída;</li>
+        <li>Parâmetro de entrada e de saída.</li>
+        <li>Algoritmos;</li>
+        <li>Deve ser identificado como cada parâmetro passa no teste, ou por valor ou por referência;</li>
+        <li>Quaisquer efeitos colaterais do subprograma;</li>
+        <li>Tipo de linguagem, incluindo a versão do “core” e da plataforma;</li>
+        <li>Referência a quaisquer padrões de programação;</li>
+        <li>Descrição ou exemplos de todas as telas de exibição;</li>
+        <li>Descrição ou exemplos de todos os relatórios implementados, seu significado e manipulação e quando foram
+          gerados.</li>
+      </ul>
+    </p>
+    <p>O nível de detalhe pode ser fornecido em especificações separadas.</p>
+
+    <h4>Glossário</h4>
+    <p>
+      Definições de quaisquer termos pouco conhecidos devem ser fornecidas.
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>

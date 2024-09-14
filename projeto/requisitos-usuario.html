@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOCUMENTO CONTENDO AS ESPECIFICAÇÕES DOS REQUISITOS DO USUÁRIO (ERU/URS)</title>
+  <link href="../styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="../projeto.html">Voltar</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>DOCUMENTO CONTENDO AS ESPECIFICAÇÕES DOS REQUISITOS DO USUÁRIO (ERU/URS)</h2>
+
+    <h3>Introdução</h3>
+    <p>O documento Especificações dos Requisitos do Usuário (ERU/URS) define os requisitos para um
+      sistema computadorizado ou um componente do sistema.</p>
+    <p>A extensão e o detalhamento deste documento devem ser comensurados com o risco, a inovação e a complexidade do
+      sistema e devem ser suficiente para darem suporte às subsequentes atividades de análises de risco, especificação,
+      configuração/projeto e verificação, se necessário.</p>
+    <p>Para sistema de baixo risco e comercialmente disponível, pode ser apropriado incluir este
+      documento na documentação de compra do sistema, enquanto para uma aplicação complexa e
+      customizada podem ser necessários vários níveis de especificação.</p>
+    <p>O documento de ERU/URS é de responsabilidade da empresa regulada, mas pode ser escrita por uma empresa
+      terceirizada ou pelo fornecedor do sistema.</p>
+    <p>O documento Especificações dos Requisitos do Usuário (ERU/URS) define com clareza e precisão o que a empresa
+      regulada deseja que o sistema faça. Ele é impulsionado pelas necessidades do
+      processo do negócio.</p>
+    <p>Para os sistemas de categoria 4 e 5 os requisitos devem ser desenvolvidos com independência em relação às
+      soluções disponíveis no mercado.</p>
+    <p>Para os sistemas de categoria 3, particularmente, pode haver número limitado de fornecedores ou mesmo um
+      fornecedor preferido para determinado tipo de sistema, que justifique a utilização de soluções disponíveis no
+      mercado.</p>
+    <p>Os requisitos devem abranger os seguintes pontos, podendo abranger outros que não estejam
+      listados:
+      <ul>
+        <li>Operacionais;</li>
+        <li>Funcionais;</li>
+        <li>Dados;</li>
+        <li>Técnicos;</li>
+        <li><i>Interface</i>;</li>
+        <li>Ambientais;</li>
+        <li>Desempenho;</li>
+        <li>Disponibilidade;</li>
+        <li>Segurança;</li>
+        <li>Manutenção;</li>
+        <li>Regulatórios;</li>
+        <li>Migração de quaisquer dados eletrônicos;</li>
+        <li>Restrições a serem observadas;</li>
+        <li>Ciclo de vida.</li>
+      </ul>
+    </p>
+    <p>Os requisitos devem abordar regulações BPx aplicáveis e dar destaque aos aspectos que são
+      críticos para a segurança do paciente, a qualidade do produto e a integridade dos dados. O
+      documento de ERU não deve incluir requisitos do tipo “atende à 21CFR Part 11” ou “atende à
+      legislação da Anvisa” e sim definir que funcionalidade o sistema deve possuir para gerenciar o
+      risco à segurança do paciente, à qualidade do produto e à integridade dos dados.</p>
+    <p>Os requisitos devem possuir as seguintes características:
+      <ul>
+        <li>Suficiente e adequados (específicos; mensuráveis, atingíveis; realísticos; testáveis);</li>
+        <li>Específicos o suficiente para a realização de testes e verificações (inequívocos; claros;
+          precisos; completos);</li>
+        <li>Capaz de auxiliar a rastreabilidade ao longo da cadeia requerimento →
+          configuração/projeto → teste;</li>
+        <li>Prover a base para a realização formal de testes e ser utilizada para a seleção do
+          fornecedor;</li>
+        <li>Priorizados com ênfase na identificação dos requisitos mandatórios. Podendo ser utilizada a
+          abordagem de três níveis de prioridade, descrita abaixo:</li>
+        <ul>
+          <li>Mandatório (alta);</li>
+          <li>Benéfico (média);</li>
+          <li>Desejavel (baixa).</li>
+        </ul>
+        <li>Identificado de forma unívoca, com versão controlada e manutenção de seu controle;</li>
+        <li>Capaz de ser utilizado como meio de comunicação e gerenciamento dos requisitos críticos
+          ao longo do ciclo de vida do sistema ao invés de ser apenas um exercício;</li>
+        <li>Prover o fornecedor do sistema com a declaração definitiva dos requisitos mandatórios e
+          desejáveis.</li>
+      </ul>
+    </p>
+    <p>A propriedade dos requisitos pertence à a empresa regulada. As necessidades operacionais do
+      negócio e quaisquer problemas associados jamais poderão ser completamente entendidas e
+      capturadas sem a efetiva participação dos usuários do sistema. Os
+      requisitos documentados formam a base para a aceitação do sistema pelos usuários.</p>
+
+    <h3>Conteúdo do Documento de ERU/URS</h3>
+
+    <h4>Introdução</h4>
+    <p>
+      O item introdução deve prover informação sobre:
+      <ul>
+        <li>Quem produziu o documento, sob que autoridade e para que propósito;</li>
+        <li>A situação contratual do documento (se aplicável), como por exemplo, se desenvolvimento
+          customizado ou terceirizado;</li>
+        <li>Relacionamento ou dependência com outros documentos.</li>
+      </ul>
+    </p>
+
+    <h4>Visão Geral</h4>
+    <p>Deve ser fornecida uma visão geral do sistema, explicando porque o sistema é necessário e o que
+      é requerido do sistema. Os seguintes pontos devem ser considerados:
+      <ul>
+        <li>Contextualização: descreve o objetivo geral do sistema no contexto atual e a situação
+          desejada;</li>
+        <li>Escopo:</li>
+        <ul>
+          <li>A inserção do sistema na visão de longo prazo da empresa;</li>
+          <li>Limites e fronteiras do sistema: que parte do processo de negócio está sendo
+            automatizada;</li>
+          <li>Objetivos-chave e benefícios;</li>
+          <li>Requisitos de BPx aplicáveis;</li>
+          <li>Outras regulações aplicáveis.</li>
+        </ul>
+      </ul>
+    </p>
+
+    <h4>Requisitos Operacionais</h4>
+    <p>
+      Os requisitos operacionais incluem:
+      <ul>
+        <li>Funções – são os requisitos funcionais que habilitam o sistema a executar o processo de
+          negócio que está sendo automatizado, tais como:</li>
+        <ul>
+          <li>Cálculos, incluindo todos os algoritmos críticos;</li>
+          <li>Segurança contra danos;</li>
+          <li>Segurança incluindo controle de acesso;</li>
+          <li>Trilhas de auditoria;</li>
+          <li>Utilização de assinaturas eletrônicas;</li>
+          <li>Saídas (ex.: relatórios);</li>
+          <li>Mensagens de erro inequívocas.</li>
+        </ul>
+        <li>Dados – requisitos relacionados ao manuseio de dados, considerando-se o seu impacto na
+          segurança do paciente, na qualidade do produto e na integridade dos dados, abrangendo os
+          seguintes pontos:</li>
+        <ul>
+          <li>Definição dos registros eletrônicos;</li>
+          <li>Definição dos tipos de dados, incluindo a identificação das características, formatação,
+            parâmetros críticos, intervalo e formato de datas válidos, limites e exatidão e assim por
+            diante;</li>
+          <li>Onde e como os dados serão gravados (ex.: bancos de dados relacionais, arquivos
+            criptografados etc.)</li>
+          <li>Campos necessários;</li>
+          <li>Migração de dados (importação e exportação);</li>
+          <li>Entrada de dados e subsequente edição;</li>
+          <li><i>Backup</i> e recuperação;</li>
+          <li>Requisitos para arquivamento;</li>
+          <li>Segurança dos dados e integridade.</li>
+        </ul>
+        <li>Requisitos Técnicos – Abrange os seguintes pontos:</li>
+        <ul>
+          <li>Mudanças na operação do sistema (inicialização, parada, teste, falhas);</li>
+          <li>Recuperação em caso de desastre;</li>
+          <li>Desempenho e requisitos de tempo. Devem ser quantitativos e inequívocos;</li>
+          <li>Ação necessária em caso de ocorrência de falhas;</li>
+          <li>Requisitos de capacidade;</li>
+          <li>Requisitos de velocidade de acesso para leitura e gravação de dados;</li>
+          <li>Requisitos de <i>hardware</i> (ex.: tela <i>touch-screen</i>, tipo de teclado; tipo de
+            <i>mouse</i> e <i>mousepad</i>; tipo e número de processadores físicos, placa de rede);</li>
+          <li>Portabilidade e acesso remoto;</li>
+          <li>Eficiência (velocidades de carregamento das telas e do sistema, atualização de telas e
+            geração de relatórios);</li>
+          <li>Tipo e versão da plataforma em que o sistema irá funcionar (<i>Windows</i>, Unix, Linux
+            etc.);</li>
+          <li>Tipos e versões dos protocolos utilizados;</li>
+          <li>Configurabilidade.</li>
+        </ul>
+        <li><i>Interfaces</i> – devem ser definidas (se aplicável), abrangendo os seguintes pontos:</li>
+        <ul>
+          <li><i>Interface(s)</i> com o usuário – definidas em termos de níveis de acesso (operador,
+            administrador, gerente do sistema) ou funções quando apropriado;</li>
+          <li><i>Interface(s)</i> com outros sistemas;</li>
+          <li><i>Interface(s)</i> com equipamentos, tais como sensores ou atuadores. Isto pode incluir
+            listas de I/O (entrada e saída) para sistemas utilizados para controle de processos;</li>
+          <li>Forma de entrada e saída de dados pelos usuários (ex.: teclado, leitor de código de
+            barras, impressoras etc.).</li>
+        </ul>
+        <li>Ambiente – envolve o ambiente no qual o sistema irá funcionar, abrangendo os seguintes
+          pontos:</li>
+        <ul>
+          <li><i>Layout</i> – <i>layout</i> físico da planta ou outro local de trabalho que pode ter
+            impacto no sistema, tais como <i>links</i> à distância (acesso remoto) ou limitações de
+            espaço;</li>
+          <li>Condições físicas (ex.: temperatura; umidade; interferência externa; proteção contra
+            radiofrequência, eletromagnético e/ou interferência de UV; poeira, alta vibração);</li>
+          <li>Requisitos físicos;</li>
+          <li> Requisitos de potência/energia (ex.: voltagem; amperagem; filtragem; frequência;
+            proteção de aterramento; fornecimento de energia elétrica ininterrupto/UPS);</li>
+          <li>Quaisquer requisitos físicos ou lógicos.</li>
+        </ul>
+      </ul>
+    </p>
+
+    <h4>Restrições</h4>
+    <p>Devem ser identificadas e documentadas quaisquer restrições nas especificações ou na operação
+      do sistema, abrangendo os seguintes pontos:
+      <ul>
+        <li>Compatibilidade, levando-se em conta quaisquer sistemas ou <i>hardware</i> existentes que
+          compartilharão os mesmos recursos ou terão <i>nterfaces</i> para troca de informação
+          (ex.: envio e recebimento de receitas de produção e de valores de
+          parâmetros do
+          processo etc.);</li>
+        <li>Disponibilidade de acesso (ex.: local, intranet e internet);</li>
+        <li>Requisitos de confiabilidade;</li>
+        <li>Período máximo permitido para manutenção ou outro tempo de inatividade;</li>
+        <li>Obrigações legais;</li>
+        <li>Métodos de trabalho;</li>
+        <li>Níveis de habilidade e conhecimento do usuário;</li>
+        <li>Capabilidade e flexibilidade de expansão;</li>
+        <li>Melhorias possíveis;</li>
+        <li>Tempo de vida esperado;</li>
+        <li>Suporte a longo prazo.</li>
+      </ul>
+    </p>
+    <h4>Ciclo de Vida</h4>
+    <p>Devem ser identificados e documentados quaisquer requisitos que possam impactar o
+      desenvolvimento do ciclo de vida no fornecedor e quaisquer atividades de verificação
+      subsequente.</p>
+    <p>Os seguintes pontos devem ser abrangidos:
+      <ul>
+        <li>Requisitos de desenvolvimento (ex.: padrões mínimos a serem atendidos pela metodologia
+          do fornecedor);</li>
+        <li> Procedimentos para gerenciamento do projeto e garantia da qualidade;</li>
+        <li>Métodos de projeto mandatórios;</li>
+        <li>Requisitos de testes especiais;</li>
+        <li>Dados de teste;</li>
+        <li>Teste de carregamento;</li>
+        <li>Simulações necessárias;</li>
+        <li>Teste de Aceitação de fábrica (FAT);</li>
+        <li>De que forma os itens a serem entregues devem ser fornecidos (ex.: formato e mídia);</li>
+        <li>Documentação a ser entregue pelo fornecedor (ex.: especificações funcionais; especificações
+          de testes; requisitos mínimos de <i>hardware</i> e <i>software</i>; especificações de
+          projeto; guias ou manuais de manutenção e do usuário);</li>
+        <li> Dados a serem preparados ou convertidos;</li>
+        <li>Ferramentas de testes, manutenção, gerenciamento de dados e acessos;</li>
+        <li>Cursos de treinamento;</li>
+        <li>Instalações para arquivamento;</li>
+        <li>Suporte e manutenção necessários após aceitação.</li>
+      </ul>
+    </p>
+
+    <h4>Glossário</h4>
+    <p>Definições de quaisquer termos pouco conhecidos devem ser fornecidas.</p>
+
+    <h4>Aprovações</h4>
+    <p>Os aprovadores devem ser definidos. No mínimo, um dos aprovadores deve ser o dono/proprietario
+      do processo. Outros aprovadores poderiam ser o dono/proprietario do sistema e a unidade da
+      qualidade.</p>
+    <p>Uma vez aprovado o documento de ERU, quaisquer alterações devem ser realizadas por meio do
+      controle de mudanças.</p>
+
+    <h3>Tópicos Fora do Escopo</h3>
+    <p>Esta seção é destinada a sistemas com níveis múltiplos de especificação e verificação e pode
+      não ser aplicável a sistemas da categoria 3, de baixo risco e comercialmente disponível.</p>
+    <p>Os seguintes itens não devem ser incluídos na ERU/URS:
+      <ul>
+        <li>Configuração do sistema/detalhes de projeto;</li>
+        <li>Detalhes de implementação;</li>
+        <li>Prazos do projeto;</li>
+        <li>Custos;</li>
+        <li>Detalhes organizacionais do projeto.</li>
+      </ul>
+    </p>
+    <p>O item configuração do sistema/detalhes do projeto é uma parte da solução de como os requisitos serão atendidos,
+      sendo definidos nas especificações subsequentes. Os detalhes de implementação também são totalmente dependentes da
+      solução, não fazendo parte desta etapa.</p>
+
+    <h3>Captura dos Requisitos</h3>
+    <p>Para os sistemas de categoria 4 e 5, frequentemente a preparação do documento de ERU/URS é
+      mais difícil e consome bastante tempo. O desenvolvimento deste documento é uma das tarefas
+      mais importantes que a empresa regulada empreenderá dentro do projeto de implementação de um
+      sistema computadorizado.</p>
+    <p>É imprescindível que o processo a ser automatizado seja devidamente mapeado antes de se definir a ERP/URS. Desta
+      forma é importante detalhar o processo passo a passo, definindo as
+      informações de entrada e de saída. Esta atividade deverá ser feita por equipe
+      multidisciplinar, envolvendo inclusive o nível operacional.</p>
+    <p>Diversos modos podem ser utilizados pela empresa regulada para a captura e refinamento dos
+      requisitos do usuário:
+      <ul>
+        <li>Discussões e entrevistas;</li>
+        <li>Observação (entendimento do processo como um todo);</li>
+        <li>Oficinas de trabalho - equipe multidisciplinar;</li>
+        <li>Entendimento das armadilhas que podem ocorrer durante a definição dos requisitos.</li>
+      </ul>
+    </p>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+
+</html>
