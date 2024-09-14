@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>APOSENTADORIA DE SISTEMAS COMPUTADORIZADOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="styles/new-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div id="nav" class="nav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ciclo-de-vida.html">Ciclo de Vida</a></li>
+      <li><a href="projeto.html">Projeto</a></li>
+      <li><a href="operacao.html">Operação</a></li>
+      <li><a href="aposentadoria.html">Aposentadoria</a></li>
+      <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+    </ul>
+
+  </div>
+
+  <div class="content">
+    <h1>APOSENTADORIA DE SISTEMAS COMPUTADORIZADOS</h1>
+    <h2>INTRODUÇÃO</h2>
+    <p>O processo de aposentadoria do sistema deve ser documentado por meio de um plano de
+      aposentadoria, que geralmente recebe contribuições dos seguintes atores: dono do processo,
+      Unidade da Qualidade, dono do sistema e Tecnologia da Informação.</p>
+
+    <p> Conteúdo do planejamento do processo pode incluir:
+      <ul>
+        <li>Requisitos para destruição e retenção para os dados históricos ou registros;</li>
+        <li>Identificação da configuração atual do <i>hardware</i> e <i>software</i>, bem como os
+          sistemas que possuem interface, equipamentos ou instrumentos;</li>
+        <li>Identificação de quaisquer sistemas externos que dependem dos dados ou registros do
+          sistema.</li>
+      </ul>
+    </p>
+    <p>A extensão e o rigor do planejamento dependem do impacto do sistema e dos riscos associados
+      com a perda de dados.</p>
+    <p>O plano de aposentadoria do sistema deve ser aprovado pelo dono do processo e unidade da
+      qualidade.</p>
+
+
+    <h2>PLANO DE APOSENTADORIA DO SISTEMA</h2>
+    <h3> Introdução</h3>
+    <p> A introdução deve incluir:
+      <ul>
+        <li>Quem produziu o documento, sob que autoridade e para que propósito;</li>
+        <li>Referência a políticas, procedimentos, padrões, guias e outros documentos.</li>
+      </ul>
+    </p>
+    <h3>Papéis e Responsabilidades</h3>
+    <p>Os papéis e responsabilidades associados ao processo de aposentadoria devem
+      ser documentados no plano, e devem abranger o dono do processo,
+      a Unidade da Qualidade, o dono do sistema, o time de aposentadoria e
+      seus membros e quaisquer outros atores que contribuírem para o processo.
+    </p>
+
+    <h3> Visão Geral e Implicações</h3>
+    <p> Consideração deve ser dada ao efeito da aposentadoria do sistema em alguns aspectos, tais
+      como:
+      <dl>
+        <dt id="def"><b>Estratégia</b></dt>
+        <dd>Documentar o impacto na estratégia geral de tecnologia e iniciar quaisquer atualizações
+          na documentação ou outras ações necessárias;</dd>
+        <dt id="def"><b>Processo</b></dt>
+        <dd>Descrever o impacto no suporte do processo de negócio após a aposentadoria;</dd>
+        <dt id="def"><b>Tecnologia</b></dt>
+        <dd>O escopo e as fronteiras do sistema a ser aposentado devem ser determinados e
+          documentados, bem como a justificativa para a aposentadoria. Identificar outros
+          sistemas, instrumentos ou equipamento que possuam <i>nterfaces</i> com o sistema que
+          irá se aposentar. Dados ou fontes de informação podem estar localizados em
+          vários sistemas. Identificar os componentes de infraestrutura (rede etc.)
+          que precisarão ser desacoplados do sistema;</dd>
+        <dt id="def"><b>Pessoal</b></dt>
+        <dd>Descrever o impacto nos usuários do sistema.</dd>
+      </dl>
+    </p>
+    <h3> Descrição do Processo de Negócio</h3>
+    <p> O processo de negócio da pré-aposentadoria deve ser documentado e entendido na perspectiva
+      do processo, do usuário e dos dados/registros. Isto ajuda a assegurar que todos os impactos
+      sejam identificados e todos os ângulos de suporte e automação sejam traduzidos em um
+      cenário pós-aposentadoria.</p>
+    <p>Este cenário futuro deve ser documentado e entendido, especialmente com relação as mudanças
+      no processo de negócio e/ou usuário e a localização ou efeito nos dados/registros.</p>
+    <h3>Abordagem para a Aposentadoria</h3>
+    <p>A decisão sobre se o sistema será substituído deve ser documentada. Se o sistema for
+      substituído, o planejamento da aposentadoria deve ser referenciado e sincronizado com o
+      planejamento de implantação do sistema substituto. A abordagem para a
+      desacoplagem da interface, desconexão da infraestrutura, finalização ou transição do suporte
+      técnico e quaisquer suposições, exclusões, limitações ou dependências devem ser documentadas.</p>
+
+    <h3>Migração, Arquivamento e Destruição de Dados e Registros</h3>
+    <p>O plano deve identificar que dados devem ser migrados, arquivados ou destruídos e o processo
+      de aprovação associado.</p>
+    <p>A abordagem para a migração de dados e para o arquivamento deve ser determinada com base no
+      histórico de acesso aos dados, na necessidade de reprocessamento, no nível de risco do
+      registro e na robustez da mídia utilizada. Devem ser estabelecidos controles para assegurar
+      que os dados e registros permaneçam seguros, completos, exatos e que a relação
+      assinatura/registro seja preservada, quando aplicável.</p>
+    <p>A abordagem deve levar em consideração os seguintes aspectos:
+      <ul>
+        <li>Se os dados devem ser mantidos, devem possuir <i>backup</i> e serem armazenados, de
+          acordo com cronogramas de retenção de dados e procedimentos da empresa;</li>
+        <li>Antes dos dados serem movidos ou arquivados do sistema, os procedimentos apropriados de
+          recuperação de dados devem estar disponíveis e testados;</li>
+        <li>A mídia de dados arquivada deve ser armazenada e mantida, de acordo com as recomendações
+          do fabricante e sob as condições ambientais necessárias;</li>
+        <li>Se os dados e os registros forem migrados para um sistema substituto, a migração deve
+          ser planejada, conduzida e verificada de modo a assegurar a integridade dos dados.
+          Os procedimentos para migração devem ser testados ou confirmados antes
+          dos dados serem completamente transferidos para fora do sistema;</li>
+        <li>Os métodos a serem utilizados para migração/conversão e verificação dos registros de
+          dados devem ser definidos.
+          Isto pode incluir a realização de um trabalho piloto, antes da migração real dos dados
+          ocorrer, ou uma operação temporária em
+          paralelo de ambos sistemas (sistema novo e o sistema a ser aposentado);</li>
+        <li> Se os dados vão ser migrados para o sistema substituto, a estratégia de testes para a
+          verificação da migração deve ser definida. Se uma migração ou conversão automatizada for
+          utilizada, a abordagem para assegurar sua adequação ao uso
+          pretendido deve ser documentada.</li>
+      </ul>
+    </p>
+
+    <h3>Abordagem para Verificação</h3>
+    <p>Deve ser identificada a documentação de verificação, necessária como parte do processo de
+      aposentadoria do sistema.
+    </p>
+
+    <h3>Manutenção do Sistema e Descontinuação do Suporte</h3>
+    <p>Devem ser planejadas as ações necessárias associadas à(s):
+      <ul>
+        <li>Modificação ou término dos acordos internos ou externos de suporte;</li>
+        <li>Operações, <i>backup</i> e restauração, recuperação de desastre e planos de continuidade
+          do negócio;</li>
+        <li>Segurança, suporte técnico e administração do usuário e programas de gerenciamento da
+          configuração.</li>
+      </ul>
+    </p>
+
+    <h3> Gerenciamento da Mudança</h3>
+    <p>Procedimentos formais de gerenciamento de mudança devem ser seguidos para a aposentadoria de
+      um sistema computadorizado para assegurar que o processo de aposentadoria seja controlado e
+      gerenciado.</p>
+    <p>As mudanças resultantes da aposentadoria do sistema devem ser abordadas, tais como as
+      mudanças nos papeis de suporte (suporte técnico, super-usuários etc.) e o treinamento
+      associado.</p>
+    <p>A abordagem para a comunicação do impacto da aposentadoria do sistema às pessoas envolvidas
+      deve ser documentada.</p>
+
+    <h3>Cronograma</h3>
+    <p>O cronograma deve ser documentado e incluir as atividades individuais de aposentadoria e as
+      respectivas responsabilidades, as datas de vencimento associadas e quaisquer outras tarefas,
+      marcos críticos e pontos de verificação.</p>
+
+    <h3>Execução da Aposentadoria</h3>
+    <p>O momento da execução da aposentadoria deve ser cuidadosamente considerado.</p>
+    <p>Devem existir planos para continuidade dos negócios para o caso de ocorrer qualquer
+      problema durante a aposentadoria ou trabalho de migração. Adicionalmente, um plano reserva
+      é recomendado e deve incluir etapas detalhadas ou referências a procedimentos para
+      configuração e reinstalação, a fim de tornar o sistema aposentado operacional novamente,
+      se necessário.</p>
+
+    <h3>Documentação e <i>Software</i> do Sistema</h3>
+    <p>Documentação do sistema e do <i>software</i>, incluindo o código fonte (Categoria 5), tais
+      como, documentação do ciclo de vida, documentação de validação, histórico de mudanças,
+      procedimentos operacionais padrão relacionados ao sistema e outros documentos do sistema,
+      devem ser definidos. A documentação a ser retida deve ter um dono responsável e um local
+      seguro designado. Inventários afetados, procedimentos e outros documentos devem ser
+      atualizados.</p>
+    <p> Decisões acerca da retenção do <i>software</i> e documentos específicos devem ser baseadas
+      em seu potencial de uso futuro e em uma avaliação do risco associado a sua destruição.</p>
+
+    <h2>RELATÓRIO DE APOSENTADORIA DO SISTEMA</h2>
+    <p>Após a execução do plano de aposentadoria do sistema, um relatório resumido deve ser gerado
+      para descrever a execução e os resultados obtidos. Se forem executadas atividades de testes
+      ou verificação, os resultados destes testes devem ser resumidos e quaisquer desvios
+      ocorridos devem ser discutidos juntamente com a sua resolução.</p>
+    <p>Este relatório também pode relacionar toda a documentação relativa ao sistema aposentado.</p>
+    </p>
+  </div>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
